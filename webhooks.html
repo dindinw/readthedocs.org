@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Webhooks &mdash; Read The Docs 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Read The Docs 1.0 documentation" href="index.html"/>
+        <link rel="next" title="Badges" href="badges.html"/>
+        <link rel="prev" title="DMCA Takedown Policy" href="dmca/index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Read The Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="builds.html">Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Read the Docs features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="yaml-config.html">Read the Docs YAML Config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Read the Docs Public API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embed.html">Embed API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About Read the Docs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contributing to Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Read the Docs Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ethical-advertising.html">Ethical Advertising</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sponsors.html">Sponsors of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="open-source-philosophy.html">Read the Docs Open Source Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="story.html">The Story of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="talks.html">Talks about Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dmca/index.html">DMCA Takedown Policy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Webhooks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#github">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bitbucket">Bitbucket</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#others">Others</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternate_domains.html">Alternate Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="localization.html">Localization of Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vcs.html">VCS Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conda.html">Conda Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="single_version.html">Single Version Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user-defined-redirects.html">User-defined Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic-redirects.html">Automatic Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features/embed.html">Content Embedding</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tests.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs.html">Building and Contributing to Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/standards.html">Development Standards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/buildenvironments.html">Build Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="symlinks.html">How we use symlinks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Interesting Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issue-labels.html">Overview of issue labels</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Business Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="business/index.html">Read the Docs Business Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Custom Install Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="custom_installs/index.html">Info about custom installs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Designer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Designing Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="theme.html">Read the Docs Theme</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Read The Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Webhooks</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/webhooks.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="webhooks">
+<h1>Webhooks<a class="headerlink" href="#webhooks" title="Permalink to this headline">¶</a></h1>
+<p>Webhooks are pretty amazing, and help to turn the web into a push instead of
+pull platform. We have support for hitting a URL whenever you commit to your
+project and we will try and rebuild your docs. This only rebuilds them if
+something has changed, so it is cheap on the server side. As anyone who has
+worked with push knows, pushing a doc update to your repo and watching it get
+updated within seconds is an awesome feeling.</p>
+<div class="section" id="github">
+<h2>GitHub<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h2>
+<p>If your project is hosted on GitHub, you can easily add a hook that will rebuild
+your docs whenever you push updates:</p>
+<ul class="simple">
+<li>Go to the &#8220;Settings&#8221; page for your project</li>
+<li>Click &#8220;Integrations &amp; Services&#8221;</li>
+<li>In the &#8220;Services&#8221; section, click &#8220;Add service&#8221;</li>
+<li>In the list of available services, click &#8220;ReadTheDocs&#8221;</li>
+<li>Leave &#8220;Active&#8221; checked</li>
+<li>Click &#8220;Add service&#8221;</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The GitHub URL in your Read the Docs project must match the URL on GitHub. The URL is case-sensitive.</p>
+</div>
+<p>If you ever need to manually set the webhook on GitHub,
+you can point it at <code class="docutils literal"><span class="pre">https://readthedocs.org/github</span></code>.</p>
+</div>
+<div class="section" id="bitbucket">
+<h2>Bitbucket<a class="headerlink" href="#bitbucket" title="Permalink to this headline">¶</a></h2>
+<p>If your project is hosted on Bitbucket, you can easily add a hook that will rebuild
+your docs whenever you push updates:</p>
+<ul class="simple">
+<li>Go to the &#8220;admin&#8221; page for your project</li>
+<li>Click &#8220;Services&#8221;</li>
+<li>In the available service hooks, select &#8220;Read the Docs&#8221;</li>
+<li>Click &#8220;Add service&#8221;</li>
+</ul>
+<p>If you ever need to manually set the webhook on Bitbucket,
+you can point it at <code class="docutils literal"><span class="pre">https://readthedocs.org/bitbucket</span></code>.</p>
+</div>
+<div class="section" id="others">
+<h2>Others<a class="headerlink" href="#others" title="Permalink to this headline">¶</a></h2>
+<p>Your ReadTheDocs project detail page has your post-commit hook on it; it will
+look something along the lines of <code class="docutils literal"><span class="pre">http://readthedocs.org/build/&lt;project_name&gt;</span></code>.
+Regardless of which revision control system you use, you can just hit this URL
+to kick off a rebuild.</p>
+<p>The following parameters available to customize the behavior of custom webhooks:</p>
+<ul>
+<li><p class="first"><code class="docutils literal"><span class="pre">'version_slug'</span></code>: The build version to trigger build for (defaults to <code class="docutils literal"><span class="pre">'latest'</span></code>)</p>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre>$ curl -X POST --data &quot;version_slug=$VERSION&quot; https://readthedocs.org/build/$PROJECT_NAME
+</pre></div>
+</div>
+</li>
+</ul>
+<p>You could make this part of a hook using <a class="reference external" href="http://www.kernel.org/pub/software/scm/git/docs/githooks.html">Git</a>, <a class="reference external" href="http://mikewest.org/2006/06/subversion-post-commit-hooks-101">Subversion</a>, <a class="reference external" href="http://hgbook.red-bean.com/read/handling-repository-events-with-hooks.html">Mercurial</a>, or
+<a class="reference external" href="http://wiki.bazaar.canonical.com/BzrHooks">Bazaar</a>, perhaps through a simple script that accesses the build URL using
+<code class="docutils literal"><span class="pre">wget</span></code> or <code class="docutils literal"><span class="pre">curl</span></code>.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="badges.html" class="btn btn-neutral float-right" title="Badges" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="dmca/index.html" class="btn btn-neutral" title="DMCA Takedown Policy" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010, Eric Holscher, Charlie Leifer, Bobby Grace.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

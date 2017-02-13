@@ -1,0 +1,410 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>readthedocs.builds &mdash; Read The Docs 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Read The Docs 1.0 documentation" href="../index.html"/>
+        <link rel="up" title="API" href="index.html"/>
+        <link rel="next" title="readthedocs.doc_builder" href="doc_builder.html"/>
+        <link rel="prev" title="readthedocs.bookmarks" href="bookmarks.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Read The Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Read the Docs features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yaml-config.html">Read the Docs YAML Config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">Read the Docs Public API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Embed API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About Read the Docs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contribute.html">Contributing to Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../team.html">Read the Docs Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ethical-advertising.html">Ethical Advertising</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sponsors.html">Sponsors of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../open-source-philosophy.html">Read the Docs Open Source Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../story.html">The Story of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../talks.html">Talks about Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dmca/index.html">DMCA Takedown Policy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../webhooks.html">Webhooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../alternate_domains.html">Alternate Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization of Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vcs.html">VCS Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conda.html">Conda Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../single_version.html">Single Version Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../privacy.html">Privacy Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">User-defined Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automatic-redirects.html">Automatic Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../features/embed.html">Content Embedding</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="bookmarks.html"><code class="docutils literal"><span class="pre">readthedocs.bookmarks</span></code></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">readthedocs.builds</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.builds.admin"><code class="docutils literal"><span class="pre">readthedocs.builds.admin</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.builds.models"><code class="docutils literal"><span class="pre">readthedocs.builds.models</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.builds.urls"><code class="docutils literal"><span class="pre">readthedocs.builds.urls</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.builds.views"><code class="docutils literal"><span class="pre">readthedocs.builds.views</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="doc_builder.html"><code class="docutils literal"><span class="pre">readthedocs.doc_builder</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.html"><code class="docutils literal"><span class="pre">readthedocs.core</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html"><code class="docutils literal"><span class="pre">readthedocs.projects</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="vcs_support.html"><code class="docutils literal"><span class="pre">readthedocs.vcs_support</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tests.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs.html">Building and Contributing to Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/standards.html">Development Standards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/buildenvironments.html">Build Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../symlinks.html">How we use symlinks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings.html">Interesting Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issue-labels.html">Overview of issue labels</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Business Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../business/index.html">Read the Docs Business Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Custom Install Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../custom_installs/index.html">Info about custom installs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Designer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../design.html">Designing Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../theme.html">Read the Docs Theme</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Read The Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">API</a> &raquo;</li>
+      
+    <li><code class="docutils literal"><span class="pre">readthedocs.builds</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/api/builds.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="readthedocs-builds">
+<h1><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.builds</span></code><a class="headerlink" href="#readthedocs-builds" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-readthedocs.builds.admin">
+<span id="readthedocs-builds-admin"></span><h2><a class="reference internal" href="#module-readthedocs.builds.admin" title="readthedocs.builds.admin"><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.builds.admin</span></code></a><a class="headerlink" href="#module-readthedocs.builds.admin" title="Permalink to this headline">¶</a></h2>
+<p>Django admin interface for <code class="xref py py-obj docutils literal"><span class="pre">Build</span></code> and related models.</p>
+</div>
+<div class="section" id="module-readthedocs.builds.models">
+<span id="readthedocs-builds-models"></span><h2><a class="reference internal" href="#module-readthedocs.builds.models" title="readthedocs.builds.models"><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.builds.models</span></code></a><a class="headerlink" href="#module-readthedocs.builds.models" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="readthedocs.builds.models.Build">
+<em class="property">class </em><code class="descclassname">readthedocs.builds.models.</code><code class="descname">Build</code><span class="sig-paren">(</span><em>id</em>, <em>project</em>, <em>version</em>, <em>type</em>, <em>state</em>, <em>date</em>, <em>success</em>, <em>setup</em>, <em>setup_error</em>, <em>output</em>, <em>error</em>, <em>exit_code</em>, <em>commit</em>, <em>length</em>, <em>builder</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.builds.models.Build" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="readthedocs.builds.models.Build.finished">
+<code class="descname">finished</code><a class="headerlink" href="#readthedocs.builds.models.Build.finished" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return if build has a finished state</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.builds.models.BuildCommandResult">
+<em class="property">class </em><code class="descclassname">readthedocs.builds.models.</code><code class="descname">BuildCommandResult</code><span class="sig-paren">(</span><em>id</em>, <em>build</em>, <em>command</em>, <em>description</em>, <em>output</em>, <em>exit_code</em>, <em>start_time</em>, <em>end_time</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.builds.models.BuildCommandResult" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="readthedocs.builds.models.BuildCommandResult.run_time">
+<code class="descname">run_time</code><a class="headerlink" href="#readthedocs.builds.models.BuildCommandResult.run_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Total command runtime in seconds</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.builds.models.BuildCommandResultMixin">
+<em class="property">class </em><code class="descclassname">readthedocs.builds.models.</code><code class="descname">BuildCommandResultMixin</code><a class="headerlink" href="#readthedocs.builds.models.BuildCommandResultMixin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mixin for common command result methods/properties</p>
+<p>Shared methods between the database model <a class="reference internal" href="#readthedocs.builds.models.BuildCommandResult" title="readthedocs.builds.models.BuildCommandResult"><code class="xref py py-class docutils literal"><span class="pre">BuildCommandResult</span></code></a> and
+non-model respresentations of build command results from the API</p>
+<dl class="attribute">
+<dt id="readthedocs.builds.models.BuildCommandResultMixin.failed">
+<code class="descname">failed</code><a class="headerlink" href="#readthedocs.builds.models.BuildCommandResultMixin.failed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Did the command exit with a failing exit code</p>
+<p>Helper for inverse of <a class="reference internal" href="#readthedocs.builds.models.BuildCommandResultMixin.successful" title="readthedocs.builds.models.BuildCommandResultMixin.successful"><code class="xref py py-meth docutils literal"><span class="pre">successful()</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="readthedocs.builds.models.BuildCommandResultMixin.successful">
+<code class="descname">successful</code><a class="headerlink" href="#readthedocs.builds.models.BuildCommandResultMixin.successful" title="Permalink to this definition">¶</a></dt>
+<dd><p>Did the command exit with a successful exit code</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.builds.models.Version">
+<em class="property">class </em><code class="descclassname">readthedocs.builds.models.</code><code class="descname">Version</code><span class="sig-paren">(</span><em>id</em>, <em>project</em>, <em>type</em>, <em>identifier</em>, <em>verbose_name</em>, <em>slug</em>, <em>supported</em>, <em>active</em>, <em>built</em>, <em>uploaded</em>, <em>privacy_level</em>, <em>machine</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.builds.models.Version" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="readthedocs.builds.models.Version.clean_build_path">
+<code class="descname">clean_build_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.builds.models.Version.clean_build_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clean build path for project version</p>
+<p>Ensure build path is clean for project version. Used to ensure stale
+build checkouts for each project version are removed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="readthedocs.builds.models.Version.commit_name">
+<code class="descname">commit_name</code><a class="headerlink" href="#readthedocs.builds.models.Version.commit_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the branch name, the tag name or the revision identifier.</p>
+<p>The result could be used as ref in a git repo, e.g. for linking to
+GitHub or Bitbucket.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.builds.models.Version.get_build_path">
+<code class="descname">get_build_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.builds.models.Version.get_build_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return version build path if path exists, otherwise <a class="reference external" href="http://python.readthedocs.io/en/latest/library/constants.html#None" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">None</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="readthedocs.builds.models.Version.identifier">
+<code class="descname">identifier</code><em class="property"> = None</em><a class="headerlink" href="#readthedocs.builds.models.Version.identifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>The identifier is the ID for the revision this is version is for. This
+might be the revision number (e.g. in SVN), or the commit hash (e.g. in
+Git). If the this version is pointing to a branch, then <code class="docutils literal"><span class="pre">identifier</span></code>
+will contain the branch name.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="readthedocs.builds.models.Version.identifier_friendly">
+<code class="descname">identifier_friendly</code><a class="headerlink" href="#readthedocs.builds.models.Version.identifier_friendly" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return display friendly identifier</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.builds.models.Version.save">
+<code class="descname">save</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.builds.models.Version.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add permissions to the Version for all owners on save.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="readthedocs.builds.models.Version.slug">
+<code class="descname">slug</code><em class="property"> = None</em><a class="headerlink" href="#readthedocs.builds.models.Version.slug" title="Permalink to this definition">¶</a></dt>
+<dd><p>The slug is the slugified version of <code class="docutils literal"><span class="pre">verbose_name</span></code> that can be used
+in the URL to identify this version in a project. It&#8217;s also used in the
+filesystem to determine how the paths for this version are called. It
+must not be used for any other identifying purposes.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="readthedocs.builds.models.Version.verbose_name">
+<code class="descname">verbose_name</code><em class="property"> = None</em><a class="headerlink" href="#readthedocs.builds.models.Version.verbose_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the actual name that we got for the commit stored in
+<code class="docutils literal"><span class="pre">identifier</span></code>. This might be the tag or branch name like <code class="docutils literal"><span class="pre">&quot;v1.0.4&quot;</span></code>.
+However this might also hold special version names like <code class="docutils literal"><span class="pre">&quot;latest&quot;</span></code>
+and <code class="docutils literal"><span class="pre">&quot;stable&quot;</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.builds.models.VersionAlias">
+<em class="property">class </em><code class="descclassname">readthedocs.builds.models.</code><code class="descname">VersionAlias</code><span class="sig-paren">(</span><em>id</em>, <em>project</em>, <em>from_slug</em>, <em>to_slug</em>, <em>largest</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.builds.models.VersionAlias" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-readthedocs.builds.urls">
+<span id="readthedocs-builds-urls"></span><h2><a class="reference internal" href="#module-readthedocs.builds.urls" title="readthedocs.builds.urls"><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.builds.urls</span></code></a><a class="headerlink" href="#module-readthedocs.builds.urls" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-readthedocs.builds.views">
+<span id="readthedocs-builds-views"></span><h2><a class="reference internal" href="#module-readthedocs.builds.views" title="readthedocs.builds.views"><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.builds.views</span></code></a><a class="headerlink" href="#module-readthedocs.builds.views" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="doc_builder.html" class="btn btn-neutral float-right" title="readthedocs.doc_builder" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bookmarks.html" class="btn btn-neutral" title="readthedocs.bookmarks" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010, Eric Holscher, Charlie Leifer, Bobby Grace.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

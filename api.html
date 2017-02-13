@@ -1,0 +1,1117 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Read the Docs Public API &mdash; Read The Docs 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Read The Docs 1.0 documentation" href="index.html"/>
+        <link rel="next" title="Embed API" href="embed.html"/>
+        <link rel="prev" title="Enabling Google Analytics on your Project" href="guides/google-analytics.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Read The Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="builds.html">Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Read the Docs features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="yaml-config.html">Read the Docs YAML Config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/index.html">Guides</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Read the Docs Public API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#a-basic-api-client-using-slumber">A basic API client using slumber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#api-endpoints">API Endpoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#doc-search">Doc Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#root">Root</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#builds">Builds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#build">Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#files">Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#file">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#projects">Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#project">Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#users">Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user">User</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versions">Versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#version">Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#filtering-examples">Filtering Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#find-highest-version">Find Highest Version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#compare-highest-version">Compare Highest Version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-search">File Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#anchor-search">Anchor Search</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="embed.html">Embed API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About Read the Docs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contributing to Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Read the Docs Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ethical-advertising.html">Ethical Advertising</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sponsors.html">Sponsors of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="open-source-philosophy.html">Read the Docs Open Source Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="story.html">The Story of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="talks.html">Talks about Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dmca/index.html">DMCA Takedown Policy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="webhooks.html">Webhooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternate_domains.html">Alternate Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="localization.html">Localization of Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vcs.html">VCS Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conda.html">Conda Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="single_version.html">Single Version Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user-defined-redirects.html">User-defined Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic-redirects.html">Automatic Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features/embed.html">Content Embedding</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tests.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs.html">Building and Contributing to Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/standards.html">Development Standards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/buildenvironments.html">Build Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="symlinks.html">How we use symlinks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Interesting Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issue-labels.html">Overview of issue labels</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Business Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="business/index.html">Read the Docs Business Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Custom Install Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="custom_installs/index.html">Info about custom installs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Designer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Designing Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="theme.html">Read the Docs Theme</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Read The Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Read the Docs Public API</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/api.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="read-the-docs-public-api">
+<h1>Read the Docs Public API<a class="headerlink" href="#read-the-docs-public-api" title="Permalink to this headline">¶</a></h1>
+<p>We have a limited public API that is available for you to get data out of the site.
+This document covers only part of the API provided. We have plans to create a read/write API, so that you can easily automate interactions with your project.</p>
+<div class="section" id="a-basic-api-client-using-slumber">
+<h2>A basic API client using slumber<a class="headerlink" href="#a-basic-api-client-using-slumber" title="Permalink to this headline">¶</a></h2>
+<p>You can use <a class="reference external" href="http://slumber.readthedocs.io/">Slumber</a> to build basic API wrappers in python. Here is a simple example of using slumber to interact with the RTD API:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+<span class="kn">import</span> <span class="nn">slumber</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="n">show_objs</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">api</span> <span class="o">=</span> <span class="n">slumber</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">base_url</span><span class="o">=</span><span class="s">&#39;http://readthedocs.org/api/v1/&#39;</span><span class="p">)</span>
+
+<span class="n">val</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">project</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">slug</span><span class="o">=</span><span class="s">&#39;pip&#39;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">show_objs</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">val</span><span class="p">[</span><span class="s">&#39;objects&#39;</span><span class="p">]:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Alternatively you can try with the following value:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># fetch project pip without metadata.</span>
+<span class="n">val</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">project</span><span class="p">(</span><span class="s">&#39;pip&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+
+<span class="c"># get a specific build</span>
+<span class="n">val</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="mi">2592228</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+
+<span class="c"># get the build of a specific project.</span>
+<span class="n">val</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">build</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">project__slug</span><span class="o">=</span><span class="s">&#39;read-the-docs&#39;</span><span class="p">)</span>
+
+<span class="c"># get a specific user by `username`</span>
+<span class="n">val</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="s">&#39;eric&#39;</span><span class="p">)</span>
+
+<span class="c">#val = api.version(&#39;pip&#39;).get()</span>
+<span class="c">#val = api.version(&#39;pip&#39;).get(slug=&#39;1.0.1&#39;)</span>
+
+<span class="c">#val = api.version(&#39;pip&#39;).highest.get()</span>
+<span class="c">#val = api.version(&#39;pip&#39;).highest(&#39;0.8&#39;).get()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="api-endpoints">
+<h2>API Endpoints<a class="headerlink" href="#api-endpoints" title="Permalink to this headline">¶</a></h2>
+<p>Feel free to use cURL and python to look at formatted json examples. You can also look at them in your browser, if it handles returned json.</p>
+<div class="highlight-python"><div class="highlight"><pre>curl http://readthedocs.org/api/v1/project/pip/?format=json | python -m json.tool
+</pre></div>
+</div>
+</div>
+<div class="section" id="doc-search">
+<h2>Doc Search<a class="headerlink" href="#doc-search" title="Permalink to this headline">¶</a></h2>
+<dl class="get">
+<dt id="get--api-v2-docsearch-">
+<code class="descname">GET </code><code class="descname">/api/v2/docsearch/</code><a class="headerlink" href="#get--api-v2-docsearch-" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">string project:</th><td class="field-body"><strong>Required</strong>. The slug of a project.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">string version:</th><td class="field-body"><strong>Required</strong>. The slug of the version for this project.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">string q:</th><td class="field-body"><strong>Required</strong>. The search query</td>
+</tr>
+</tbody>
+</table>
+<p>You can search a specific set of documentation using our doc search endpoint.
+It returns data in the format of Elastic Search,
+which requires a bit of traversing to use.</p>
+<p>In the future we might change the format of this endpoint to make it more abstact.</p>
+<p>An example URL: <a class="reference external" href="http://readthedocs.org/api/v2/docsearch/?project=docs&amp;version=latest&amp;q=subdomains">http://readthedocs.org/api/v2/docsearch/?project=docs&amp;version=latest&amp;q=subdomains</a></p>
+<p>Results:</p>
+</div></blockquote>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;results&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;hits&quot;</span><span class="o">:</span> <span class="p">{</span>
+            <span class="s2">&quot;hits&quot;</span><span class="o">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="s2">&quot;fields&quot;</span><span class="o">:</span> <span class="p">{</span>
+                        <span class="s2">&quot;link&quot;</span><span class="o">:</span> <span class="s2">&quot;http://localhost:9999/docs/test-docs/en/latest/history/classes/coworking&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;path&quot;</span><span class="o">:</span> <span class="p">[</span>
+                            <span class="s2">&quot;history/classes/coworking&quot;</span>
+                        <span class="p">],</span>
+                        <span class="s2">&quot;project&quot;</span><span class="o">:</span> <span class="p">[</span>
+                            <span class="s2">&quot;test-docs&quot;</span>
+                        <span class="p">],</span>
+                        <span class="s2">&quot;title&quot;</span><span class="o">:</span> <span class="p">[</span>
+                            <span class="s2">&quot;PIE coworking&quot;</span>
+                        <span class="p">],</span>
+                        <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="p">[</span>
+                            <span class="s2">&quot;latest&quot;</span>
+                        <span class="p">]</span>
+                    <span class="p">},</span>
+                    <span class="s2">&quot;highlight&quot;</span><span class="o">:</span> <span class="p">{</span>
+                        <span class="s2">&quot;content&quot;</span><span class="o">:</span> <span class="p">[</span>
+                            <span class="s2">&quot;\nhelp fund more endeavors. Beta &lt;em&gt;test&lt;/em&gt;  This first iteration of PIE was a very underground project&quot;</span>
+                        <span class="p">]</span>
+                    <span class="p">}</span>
+                <span class="p">},</span>
+            <span class="p">],</span>
+            <span class="s2">&quot;max_score&quot;</span><span class="o">:</span> <span class="mf">0.47553805</span><span class="p">,</span>
+            <span class="s2">&quot;total&quot;</span><span class="o">:</span> <span class="mi">2</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="root">
+<h2>Root<a class="headerlink" href="#root" title="Permalink to this headline">¶</a></h2>
+<dl class="get">
+<dt id="get--api-v1-">
+<code class="descname">GET </code><code class="descname">/api/v1/</code><a class="headerlink" href="#get--api-v1-" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Retrieve a list of resources.</div></blockquote>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;build&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;list_endpoint&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/build/&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;schema&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/build/schema/&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;file&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;list_endpoint&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/file/&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;schema&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/file/schema/&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;project&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;list_endpoint&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/project/&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;schema&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/project/schema/&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;user&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;list_endpoint&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/user/&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;schema&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/user/schema/&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;list_endpoint&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/version/&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;schema&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/version/schema/&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Response JSON Object:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><ul class="first last simple">
+<li><strong>list_endpoint</strong> (<em>string</em>) &#8211; API endpoint for resource.</li>
+<li><strong>schema</strong> (<em>string</em>) &#8211; API endpoint for schema of resource.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="builds">
+<h2>Builds<a class="headerlink" href="#builds" title="Permalink to this headline">¶</a></h2>
+<dl class="get">
+<dt id="get--api-v1-build-">
+<code class="descname">GET </code><code class="descname">/api/v1/build/</code><a class="headerlink" href="#get--api-v1-build-" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Retrieve a list of Builds.</div></blockquote>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;meta&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;limit&quot;</span><span class="o">:</span> <span class="mi">20</span><span class="p">,</span>
+        <span class="s2">&quot;next&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/build/?limit=20&amp;offset=20&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;offset&quot;</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">&quot;previous&quot;</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="s2">&quot;total_count&quot;</span><span class="o">:</span> <span class="mi">86684</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;objects&quot;</span><span class="o">:</span> <span class="p">[</span><span class="nx">BUILDS</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Response JSON Object:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><ul class="first last simple">
+<li><strong>limit</strong> (<em>integer</em>) &#8211; Number of Builds returned.</li>
+<li><strong>next</strong> (<em>string</em>) &#8211; URI for next set of Builds.</li>
+<li><strong>offset</strong> (<em>integer</em>) &#8211; Current offset used for pagination.</li>
+<li><strong>previous</strong> (<em>string</em>) &#8211; URI for previous set of Builds.</li>
+<li><strong>total_count</strong> (<em>integer</em>) &#8211; Total number of Builds.</li>
+<li><strong>objects</strong> (<em>array</em>) &#8211; Array of <a class="reference internal" href="#build">Build</a> objects.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="build">
+<h2>Build<a class="headerlink" href="#build" title="Permalink to this headline">¶</a></h2>
+<dl class="get">
+<dt id="get--api-v1-build-id-">
+<code class="descname">GET </code><code class="descname">/api/v1/build/{id}/</code><a class="headerlink" href="#get--api-v1-build-id-" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id</strong> &#8211; <p>A Build id.</p>
+<p>Retrieve a single Build.</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;date&quot;</span><span class="o">:</span> <span class="s2">&quot;2012-03-12T19:58:29.307403&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;error&quot;</span><span class="o">:</span> <span class="s2">&quot;SPHINX ERROR&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="s2">&quot;91207&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;output&quot;</span><span class="o">:</span> <span class="s2">&quot;SPHINX OUTPUT&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;project&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/project/2599/&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;resource_uri&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/build/91207/&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;setup&quot;</span><span class="o">:</span> <span class="s2">&quot;HEAD is now at cd00d00 Merge pull request #181 from Nagyman/solr_setup\n&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;setup_error&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;state&quot;</span><span class="o">:</span> <span class="s2">&quot;finished&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;success&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;html&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/version/37405/&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Response JSON Object:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><ul class="first last simple">
+<li><strong>date</strong> (<em>string</em>) &#8211; Date of Build.</li>
+<li><strong>error</strong> (<em>string</em>) &#8211; Error from Sphinx build process.</li>
+<li><strong>id</strong> (<em>string</em>) &#8211; Build id.</li>
+<li><strong>output</strong> (<em>string</em>) &#8211; Output from Sphinx build process.</li>
+<li><strong>project</strong> (<em>string</em>) &#8211; URI for Project of Build.</li>
+<li><strong>resource_uri</strong> (<em>string</em>) &#8211; URI for Build.</li>
+<li><strong>setup</strong> (<em>string</em>) &#8211; Setup output from Sphinx build process.</li>
+<li><strong>setup_error</strong> (<em>string</em>) &#8211; Setup error from Sphinx build process.</li>
+<li><strong>state</strong> (<em>string</em>) &#8211; &#8220;triggered&#8221;, &#8220;building&#8221;, or &#8220;finished&#8221;</li>
+<li><strong>success</strong> (<em>boolean</em>) &#8211; Was build successful?</li>
+<li><strong>type</strong> (<em>string</em>) &#8211; Build type (&#8220;html&#8221;, &#8220;pdf&#8221;, &#8220;man&#8221;, or &#8220;epub&#8221;)</li>
+<li><strong>version</strong> (<em>string</em>) &#8211; URI for Version of Build.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="files">
+<h2>Files<a class="headerlink" href="#files" title="Permalink to this headline">¶</a></h2>
+<dl class="get">
+<dt id="get--api-v1-file-">
+<code class="descname">GET </code><code class="descname">/api/v1/file/</code><a class="headerlink" href="#get--api-v1-file-" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Retrieve a list of Files.</div></blockquote>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;meta&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;limit&quot;</span><span class="o">:</span> <span class="mi">20</span><span class="p">,</span>
+        <span class="s2">&quot;next&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/file/?limit=20&amp;offset=20&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;offset&quot;</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">&quot;previous&quot;</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="s2">&quot;total_count&quot;</span><span class="o">:</span> <span class="mi">32084</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;objects&quot;</span><span class="o">:</span> <span class="p">[</span><span class="nx">FILES</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Response JSON Object:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><ul class="first last simple">
+<li><strong>limit</strong> (<em>integer</em>) &#8211; Number of Files returned.</li>
+<li><strong>next</strong> (<em>string</em>) &#8211; URI for next set of Files.</li>
+<li><strong>offset</strong> (<em>integer</em>) &#8211; Current offset used for pagination.</li>
+<li><strong>previous</strong> (<em>string</em>) &#8211; URI for previous set of Files.</li>
+<li><strong>total_count</strong> (<em>integer</em>) &#8211; Total number of Files.</li>
+<li><strong>objects</strong> (<em>array</em>) &#8211; Array of <a class="reference internal" href="#file">File</a> objects.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="file">
+<h2>File<a class="headerlink" href="#file" title="Permalink to this headline">¶</a></h2>
+<dl class="get">
+<dt id="get--api-v1-file-id-">
+<code class="descname">GET </code><code class="descname">/api/v1/file/{id}/</code><a class="headerlink" href="#get--api-v1-file-id-" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id</strong> &#8211; <p>A File id.</p>
+<p>Retrieve a single File.</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;absolute_url&quot;</span><span class="o">:</span> <span class="s2">&quot;/docs/keystone/en/latest/search.html&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="s2">&quot;332692&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;search.html&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;path&quot;</span><span class="o">:</span> <span class="s2">&quot;search.html&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;project&quot;</span><span class="o">:</span> <span class="p">{</span><span class="nx">PROJECT</span><span class="p">},</span>
+    <span class="s2">&quot;resource_uri&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/file/332692/&quot;</span>
+  <span class="p">}</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Response JSON Object:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><ul class="first last simple">
+<li><strong>absolute_url</strong> (<em>string</em>) &#8211; URI for actual file (not the File object from the API.)</li>
+<li><strong>id</strong> (<em>string</em>) &#8211; File id.</li>
+<li><strong>name</strong> (<em>string</em>) &#8211; Name of File.</li>
+<li><strong>path</strong> (<em>string</em>) &#8211; Name of Path.</li>
+<li><strong>project</strong> (<em>object</em>) &#8211; A <a class="reference internal" href="#project">Project</a> object for the file&#8217;s project.</li>
+<li><strong>resource_uri</strong> (<em>string</em>) &#8211; URI for File object.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="projects">
+<h2>Projects<a class="headerlink" href="#projects" title="Permalink to this headline">¶</a></h2>
+<dl class="get">
+<dt id="get--api-v1-project-">
+<code class="descname">GET </code><code class="descname">/api/v1/project/</code><a class="headerlink" href="#get--api-v1-project-" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Retrieve a list of Projects.</div></blockquote>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;meta&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;limit&quot;</span><span class="o">:</span> <span class="mi">20</span><span class="p">,</span>
+        <span class="s2">&quot;next&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/project/?limit=20&amp;offset=20&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;offset&quot;</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">&quot;previous&quot;</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="s2">&quot;total_count&quot;</span><span class="o">:</span> <span class="mi">2067</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;objects&quot;</span><span class="o">:</span> <span class="p">[</span><span class="nx">PROJECTS</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Response JSON Object:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><ul class="first last simple">
+<li><strong>limit</strong> (<em>integer</em>) &#8211; Number of Projects returned.</li>
+<li><strong>next</strong> (<em>string</em>) &#8211; URI for next set of Projects.</li>
+<li><strong>offset</strong> (<em>integer</em>) &#8211; Current offset used for pagination.</li>
+<li><strong>previous</strong> (<em>string</em>) &#8211; URI for previous set of Projects.</li>
+<li><strong>total_count</strong> (<em>integer</em>) &#8211; Total number of Projects.</li>
+<li><strong>objects</strong> (<em>array</em>) &#8211; Array of <a class="reference internal" href="#project">Project</a> objects.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="project">
+<h2>Project<a class="headerlink" href="#project" title="Permalink to this headline">¶</a></h2>
+<dl class="get">
+<dt id="get--api-v1-project-id">
+<code class="descname">GET </code><code class="descname">/api/v1/project/{id}</code><a class="headerlink" href="#get--api-v1-project-id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id</strong> &#8211; <p>A Project id.</p>
+<p>Retrieve a single Project.</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;absolute_url&quot;</span><span class="o">:</span> <span class="s2">&quot;/projects/docs/&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;analytics_code&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;copyright&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;crate_url&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;default_branch&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;default_version&quot;</span><span class="o">:</span> <span class="s2">&quot;latest&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;description&quot;</span><span class="o">:</span> <span class="s2">&quot;Make docs.readthedocs.io work :D&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;django_packages_url&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;documentation_type&quot;</span><span class="o">:</span> <span class="s2">&quot;sphinx&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="s2">&quot;2599&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;modified_date&quot;</span><span class="o">:</span> <span class="s2">&quot;2012-03-12T19:59:09.130773&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;docs&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;project_url&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;pub_date&quot;</span><span class="o">:</span> <span class="s2">&quot;2012-02-19T18:10:56.582780&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;repo&quot;</span><span class="o">:</span> <span class="s2">&quot;git://github.com/rtfd/readthedocs.org&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;repo_type&quot;</span><span class="o">:</span> <span class="s2">&quot;git&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;requirements_file&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;resource_uri&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/project/2599/&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;slug&quot;</span><span class="o">:</span> <span class="s2">&quot;docs&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;subdomain&quot;</span><span class="o">:</span> <span class="s2">&quot;http://docs.readthedocs.io/&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;suffix&quot;</span><span class="o">:</span> <span class="s2">&quot;.rst&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;theme&quot;</span><span class="o">:</span> <span class="s2">&quot;default&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;use_virtualenv&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;users&quot;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="s2">&quot;/api/v1/user/1/&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Response JSON Object:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><ul class="first last simple">
+<li><strong>absolute_url</strong> (<em>string</em>) &#8211; URI for project (not the Project object from the API.)</li>
+<li><strong>analytics_code</strong> (<em>string</em>) &#8211; Analytics tracking code.</li>
+<li><strong>copyright</strong> (<em>string</em>) &#8211; Copyright</li>
+<li><strong>crate_url</strong> (<em>string</em>) &#8211; Crate.io URI.</li>
+<li><strong>default_branch</strong> (<em>string</em>) &#8211; Default branch.</li>
+<li><strong>default_version</strong> (<em>string</em>) &#8211; Default version.</li>
+<li><strong>description</strong> (<em>string</em>) &#8211; Description of project.</li>
+<li><strong>django_packages_url</strong> (<em>string</em>) &#8211; Djangopackages.com URI.</li>
+<li><strong>documentation_type</strong> (<em>string</em>) &#8211; Either &#8220;sphinx&#8221; or &#8220;sphinx_html&#8221;.</li>
+<li><strong>id</strong> (<em>string</em>) &#8211; Project id.</li>
+<li><strong>modified_date</strong> (<em>string</em>) &#8211; Last modified date.</li>
+<li><strong>name</strong> (<em>string</em>) &#8211; Project name.</li>
+<li><strong>project_url</strong> (<em>string</em>) &#8211; Project homepage.</li>
+<li><strong>pub_date</strong> (<em>string</em>) &#8211; Last published date.</li>
+<li><strong>repo</strong> (<em>string</em>) &#8211; URI for VCS repository.</li>
+<li><strong>repo_type</strong> (<em>string</em>) &#8211; Type of VCS repository.</li>
+<li><strong>requirements_file</strong> (<em>string</em>) &#8211; Pip requirements file for packages needed for building docs.</li>
+<li><strong>resource_uri</strong> (<em>string</em>) &#8211; URI for Project.</li>
+<li><strong>slug</strong> (<em>string</em>) &#8211; Slug.</li>
+<li><strong>subdomain</strong> (<em>string</em>) &#8211; Subdomain.</li>
+<li><strong>suffix</strong> (<em>string</em>) &#8211; File suffix of docfiles. (Usually &#8221;.rst&#8221;.)</li>
+<li><strong>theme</strong> (<em>string</em>) &#8211; Sphinx theme.</li>
+<li><strong>use_virtualenv</strong> (<em>boolean</em>) &#8211; Build project in a virtualenv? (True or False)</li>
+<li><strong>users</strong> (<em>array</em>) &#8211; Array of readthedocs.org user URIs for administrators of Project.</li>
+<li><strong>version</strong> (<em>string</em>) &#8211; DEPRECATED.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="users">
+<h2>Users<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h2>
+<dl class="get">
+<dt id="get--api-v1-user-">
+<code class="descname">GET </code><code class="descname">/api/v1/user/</code><a class="headerlink" href="#get--api-v1-user-" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Retrieve List of Users</div></blockquote>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;meta&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;limit&quot;</span><span class="o">:</span> <span class="mi">20</span><span class="p">,</span>
+        <span class="s2">&quot;next&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/user/?limit=20&amp;offset=20&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;offset&quot;</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">&quot;previous&quot;</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="s2">&quot;total_count&quot;</span><span class="o">:</span> <span class="mi">3200</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;objects&quot;</span><span class="o">:</span> <span class="p">[</span><span class="nx">USERS</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Response JSON Object:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><ul class="first last simple">
+<li><strong>limit</strong> (<em>integer</em>) &#8211; Number of Users returned.</li>
+<li><strong>next</strong> (<em>string</em>) &#8211; URI for next set of Users.</li>
+<li><strong>offset</strong> (<em>integer</em>) &#8211; Current offset used for pagination.</li>
+<li><strong>previous</strong> (<em>string</em>) &#8211; URI for previous set of Users.</li>
+<li><strong>total_count</strong> (<em>integer</em>) &#8211; Total number of Users.</li>
+<li><strong>USERS</strong> (<em>array</em>) &#8211; Array of <a class="reference internal" href="#user">User</a> objects.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="user">
+<h2>User<a class="headerlink" href="#user" title="Permalink to this headline">¶</a></h2>
+<dl class="get">
+<dt id="get--api-v1-user-id-">
+<code class="descname">GET </code><code class="descname">/api/v1/user/{id}/</code><a class="headerlink" href="#get--api-v1-user-id-" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id</strong> &#8211; <p>A User id.</p>
+<p>Retrieve a single User</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;first_name&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;last_login&quot;</span><span class="o">:</span> <span class="s2">&quot;2010-10-28T13:38:13.022687&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;last_name&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;resource_uri&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/user/1/&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;username&quot;</span><span class="o">:</span> <span class="s2">&quot;testuser&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Response JSON Object:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><ul class="first last simple">
+<li><strong>first_name</strong> (<em>string</em>) &#8211; First name.</li>
+<li><strong>id</strong> (<em>string</em>) &#8211; User id.</li>
+<li><strong>last_login</strong> (<em>string</em>) &#8211; Timestamp of last login.</li>
+<li><strong>last_name</strong> (<em>string</em>) &#8211; Last name.</li>
+<li><strong>resource_uri</strong> (<em>string</em>) &#8211; URI for this user.</li>
+<li><strong>username</strong> (<em>string</em>) &#8211; User name.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="versions">
+<h2>Versions<a class="headerlink" href="#versions" title="Permalink to this headline">¶</a></h2>
+<dl class="get">
+<dt id="get--api-v1-version-">
+<code class="descname">GET </code><code class="descname">/api/v1/version/</code><a class="headerlink" href="#get--api-v1-version-" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Retrieve a list of Versions.</div></blockquote>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;meta&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;limit&quot;</span><span class="o">:</span> <span class="mi">20</span><span class="p">,</span>
+        <span class="s2">&quot;next&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/version/?limit=20&amp;offset=20&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;offset&quot;</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">&quot;previous&quot;</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="s2">&quot;total_count&quot;</span><span class="o">:</span> <span class="mi">16437</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;objects&quot;</span><span class="o">:</span> <span class="p">[</span><span class="nx">VERSIONS</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Response JSON Object:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><ul class="first last simple">
+<li><strong>limit</strong> (<em>integer</em>) &#8211; Number of Versions returned.</li>
+<li><strong>next</strong> (<em>string</em>) &#8211; URI for next set of Versions.</li>
+<li><strong>offset</strong> (<em>integer</em>) &#8211; Current offset used for pagination.</li>
+<li><strong>previous</strong> (<em>string</em>) &#8211; URI for previous set of Versions.</li>
+<li><strong>total_count</strong> (<em>integer</em>) &#8211; Total number of Versions.</li>
+<li><strong>objects</strong> (<em>array</em>) &#8211; Array of <a class="reference internal" href="#version">Version</a> objects.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="version">
+<h2>Version<a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h2>
+<dl class="get">
+<dt id="get--api-v1-version-id">
+<code class="descname">GET </code><code class="descname">/api/v1/version/{id}</code><a class="headerlink" href="#get--api-v1-version-id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id</strong> &#8211; <p>A Version id.</p>
+<p>Retrieve a single Version.</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;active&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;built&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="s2">&quot;12095&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;identifier&quot;</span><span class="o">:</span> <span class="s2">&quot;remotes/origin/zip_importing&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;project&quot;</span><span class="o">:</span> <span class="p">{</span><span class="nx">PROJECT</span><span class="p">},</span>
+    <span class="s2">&quot;resource_uri&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/version/12095/&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;slug&quot;</span><span class="o">:</span> <span class="s2">&quot;zip_importing&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;uploaded&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;verbose_name&quot;</span><span class="o">:</span> <span class="s2">&quot;zip_importing&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Response JSON Object:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><ul class="first last simple">
+<li><strong>active</strong> (<em>boolean</em>) &#8211; Are we continuing to build docs for this version?</li>
+<li><strong>built</strong> (<em>boolean</em>) &#8211; Have docs been built for this version?</li>
+<li><strong>id</strong> (<em>string</em>) &#8211; Version id.</li>
+<li><strong>identifier</strong> (<em>string</em>) &#8211; Identifier of Version.</li>
+<li><strong>project</strong> (<em>object</em>) &#8211; A <a class="reference internal" href="#project">Project</a> object for the version&#8217;s project.</li>
+<li><strong>resource_uri</strong> (<em>string</em>) &#8211; URI for Version object.</li>
+<li><strong>slug</strong> (<em>string</em>) &#8211; String that uniquely identifies a project</li>
+<li><strong>uploaded</strong> (<em>boolean</em>) &#8211; Were docs uploaded? (As opposed to being build by Read the Docs.)</li>
+<li><strong>verbose_name</strong> (<em>string</em>) &#8211; Usually the same as Slug.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="filtering-examples">
+<h2>Filtering Examples<a class="headerlink" href="#filtering-examples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="find-highest-version">
+<h3>Find Highest Version<a class="headerlink" href="#find-highest-version" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>http://readthedocs.org/api/v1/version/pip/highest/?format=json
+</pre></div>
+</div>
+<dl class="get">
+<dt id="get--api-v1-version-id-highest-">
+<code class="descname">GET </code><code class="descname">/api/v1/version/{id}/highest/</code><a class="headerlink" href="#get--api-v1-version-id-highest-" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id</strong> &#8211; <p>A Version id.</p>
+<p>Retrieve highest version.</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;is_highest&quot;</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="s2">&quot;project&quot;</span><span class="o">:</span> <span class="s2">&quot;Version 1.0.1 of pip (5476)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;slug&quot;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="s2">&quot;1.0.1&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="s2">&quot;/docs/pip/en/1.0.1/&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;1.0.1&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="compare-highest-version">
+<h3>Compare Highest Version<a class="headerlink" href="#compare-highest-version" title="Permalink to this headline">¶</a></h3>
+<p>This will allow you to compare whether a certain version is the highest version of a specific project. The below query should return a <code class="xref py py-obj docutils literal"><span class="pre">'is_highest':</span> <span class="pre">false</span></code> in the returned dictionary.</p>
+<div class="highlight-python"><div class="highlight"><pre>http://readthedocs.org/api/v1/version/pip/highest/0.8/?format=json
+</pre></div>
+</div>
+<dl class="get">
+<dt id="get--api-v1-version-id-highest-version">
+<code class="descname">GET </code><code class="descname">/api/v1/version/{id}/highest/{version}</code><a class="headerlink" href="#get--api-v1-version-id-highest-version" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id</strong> &#8211; A Version id.</li>
+<li><strong>version</strong> &#8211; <p>A Version number or string.</p>
+<p>Retrieve highest version.</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;is_highest&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;project&quot;</span><span class="o">:</span> <span class="s2">&quot;Version 1.0.1 of pip (5476)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;slug&quot;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="s2">&quot;1.0.1&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="s2">&quot;/docs/pip/en/1.0.1/&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;1.0.1&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="file-search">
+<h3>File Search<a class="headerlink" href="#file-search" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>http://readthedocs.org/api/v1/file/search/?format=json&amp;q=virtualenvwrapper
+</pre></div>
+</div>
+<dl class="get">
+<dt id="get--api-v1-file-search-?q=search_term">
+<code class="descname">GET </code><code class="descname">/api/v1/file/search/?q={search_term}</code><a class="headerlink" href="#get--api-v1-file-search-?q=search_term" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>search_term</strong> &#8211; <p>Perform search with this term.</p>
+<p>Retrieve a list of File objects that contain the search term.</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;objects&quot;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;absolute_url&quot;</span><span class="o">:</span> <span class="s2">&quot;/docs/python-guide/en/latest/scenarios/virtualenvs/index.html&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="s2">&quot;375539&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;index.html&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;path&quot;</span><span class="o">:</span> <span class="s2">&quot;scenarios/virtualenvs/index.html&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;project&quot;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">&quot;absolute_url&quot;</span><span class="o">:</span> <span class="s2">&quot;/projects/python-guide/&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;analytics_code&quot;</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">&quot;copyright&quot;</span><span class="o">:</span> <span class="s2">&quot;Unknown&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;crate_url&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;default_branch&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;default_version&quot;</span><span class="o">:</span> <span class="s2">&quot;latest&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;description&quot;</span><span class="o">:</span> <span class="s2">&quot;[WIP] Python best practices...&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;django_packages_url&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;documentation_type&quot;</span><span class="o">:</span> <span class="s2">&quot;sphinx_htmldir&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="s2">&quot;530&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;modified_date&quot;</span><span class="o">:</span> <span class="s2">&quot;2012-03-13T01:05:30.191496&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;python-guide&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;project_url&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;pub_date&quot;</span><span class="o">:</span> <span class="s2">&quot;2011-03-20T19:40:03.599987&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;repo&quot;</span><span class="o">:</span> <span class="s2">&quot;git://github.com/kennethreitz/python-guide.git&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;repo_type&quot;</span><span class="o">:</span> <span class="s2">&quot;git&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;requirements_file&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;resource_uri&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/project/530/&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;slug&quot;</span><span class="o">:</span> <span class="s2">&quot;python-guide&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;subdomain&quot;</span><span class="o">:</span> <span class="s2">&quot;http://python-guide.readthedocs.io/&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;suffix&quot;</span><span class="o">:</span> <span class="s2">&quot;.rst&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;theme&quot;</span><span class="o">:</span> <span class="s2">&quot;kr&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;use_virtualenv&quot;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+                <span class="s2">&quot;users&quot;</span><span class="o">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;/api/v1/user/130/&quot;</span>
+                <span class="p">],</span>
+                <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;resource_uri&quot;</span><span class="o">:</span> <span class="s2">&quot;/api/v1/file/375539/&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;text&quot;</span><span class="o">:</span> <span class="s2">&quot;...&lt;span class=\&quot;highlighted\&quot;&gt;virtualenvwrapper&lt;/span&gt;\n...&quot;</span>
+        <span class="p">},</span>
+        <span class="p">...</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="anchor-search">
+<h3>Anchor Search<a class="headerlink" href="#anchor-search" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>http://readthedocs.org/api/v1/file/anchor/?format=json&amp;q=virtualenv
+</pre></div>
+</div>
+<dl class="get">
+<dt id="get--api-v1-file-anchor-?q=search_term">
+<code class="descname">GET </code><code class="descname">/api/v1/file/anchor/?q={search_term}</code><a class="headerlink" href="#get--api-v1-file-anchor-?q=search_term" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>search_term</strong> &#8211; <p>Perform search of files containing anchor text with this term.</p>
+<p>Retrieve a list of absolute URIs for files that contain the search term.</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-js"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;objects&quot;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="s2">&quot;http//django-fab-deploy.readthedocs.io/en/latest/...&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;http//dimagi-deployment-tools.readthedocs.io/en/...&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;http//openblock.readthedocs.io/en/latest/install/base_install.html#virtualenv&quot;</span><span class="p">,</span>
+        <span class="p">...</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="embed.html" class="btn btn-neutral float-right" title="Embed API" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="guides/google-analytics.html" class="btn btn-neutral" title="Enabling Google Analytics on your Project" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010, Eric Holscher, Charlie Leifer, Bobby Grace.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

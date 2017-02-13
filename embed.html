@@ -1,0 +1,414 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Embed API &mdash; Read The Docs 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Read The Docs 1.0 documentation" href="index.html"/>
+        <link rel="next" title="Contributing to Read the Docs" href="contribute.html"/>
+        <link rel="prev" title="Read the Docs Public API" href="api.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Read The Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="builds.html">Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Read the Docs features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="yaml-config.html">Read the Docs YAML Config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Read the Docs Public API</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Embed API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#workflow">Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-use-it">How to use it</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sphinx-extension">Sphinx Extension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#javascript">Javascript</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#example-api-response">Example API Response</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">About Read the Docs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contributing to Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Read the Docs Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ethical-advertising.html">Ethical Advertising</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sponsors.html">Sponsors of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="open-source-philosophy.html">Read the Docs Open Source Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="story.html">The Story of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="talks.html">Talks about Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dmca/index.html">DMCA Takedown Policy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="webhooks.html">Webhooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternate_domains.html">Alternate Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="localization.html">Localization of Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vcs.html">VCS Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conda.html">Conda Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="single_version.html">Single Version Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user-defined-redirects.html">User-defined Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic-redirects.html">Automatic Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features/embed.html">Content Embedding</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tests.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs.html">Building and Contributing to Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/standards.html">Development Standards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/buildenvironments.html">Build Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="symlinks.html">How we use symlinks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Interesting Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issue-labels.html">Overview of issue labels</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Business Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="business/index.html">Read the Docs Business Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Custom Install Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="custom_installs/index.html">Info about custom installs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Designer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Designing Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="theme.html">Read the Docs Theme</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Read The Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Embed API</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/embed.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="embed-api">
+<h1>Embed API<a class="headerlink" href="#embed-api" title="Permalink to this headline">¶</a></h1>
+<p>Read the Docs allow you to embed content from any of the projects we host.
+This allows for content re-use across sites,
+making sure the content is always up to date.</p>
+<div class="section" id="workflow">
+<h2>Workflow<a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h2>
+<p>There are many uses of our Embed API.
+One of our favorites is for inline help.
+We have started using this on Read the Docs itself to provide inline help on our main site pages.
+This allows us to keep the official documentation as the single source of truth,
+while having great inline help in our application as well.</p>
+<p>We recommend you point at <strong>tagged releases</strong> instead of <code class="docutils literal"><span class="pre">latest</span></code>.
+Tags don&#8217;t change over time,
+so you don&#8217;t have to worry about the content you are embedding disappearing.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">All relative links to pages contained in the remote content will continue to point at the remote page.</p>
+</div>
+</div>
+<div class="section" id="how-to-use-it">
+<h2>How to use it<a class="headerlink" href="#how-to-use-it" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sphinx-extension">
+<h3>Sphinx Extension<a class="headerlink" href="#sphinx-extension" title="Permalink to this headline">¶</a></h3>
+<p>You can embed content directly in Sphinx with builds on Read the Docs.
+We support default configuration variables for your <code class="docutils literal"><span class="pre">conf.py</span></code>:</p>
+<ul class="simple">
+<li>readthedocs_embed_project</li>
+<li>readthedocs_embed_version</li>
+<li>readthedocs_embed_doc</li>
+</ul>
+<p>These are overridable per-call as well.
+Then you simply use the directive:</p>
+<div class="highlight-restructuredtext"><div class="highlight"><pre># All arguments
+<span class="p">..</span> <span class="ow">readthedocs-embed</span><span class="p">::</span>
+    <span class="nc">:project:</span> <span class="nf">myproject</span>
+    <span class="nc">:version:</span> <span class="nf">latest</span>
+    <span class="nc">:doc:</span> <span class="nf">index</span>
+    <span class="nc">:section:</span> <span class="nf">User Guide</span>
+
+# Or with some defaults
+<span class="p">..</span> <span class="ow">readthedocs-embed</span><span class="p">::</span>
+    <span class="nc">:doc:</span> <span class="nf">index</span>
+    <span class="nc">:section:</span> <span class="nf">User Guide</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="javascript">
+<h3>Javascript<a class="headerlink" href="#javascript" title="Permalink to this headline">¶</a></h3>
+<p>We provide a Javascript library that you can embed on any site.
+An example:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="c">&lt;!-- In your &lt;head&gt; --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;http://localhost:5555/static/css/public.css&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;http://localhost:5555/static/javascript/bundle-public.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="nx">embed</span> <span class="o">=</span> <span class="nx">ReadTheDocs</span><span class="p">.</span><span class="nx">Embed</span><span class="p">(</span><span class="nx">project</span><span class="p">,</span> <span class="nx">version</span><span class="p">)</span>
+<span class="nx">rtd</span><span class="p">.</span><span class="nx">into</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">,</span> <span class="s1">&#39;section&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">content</span><span class="p">){</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#foobar&#39;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">content</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="nt">&lt;/script&gt;</span>
+
+<span class="c">&lt;!-- In your &lt;body&gt; --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;help_container&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;readthedocs-help-embed&quot;</span> <span class="na">data-section=</span><span class="s">&quot;How we envision versions working&quot;</span><span class="nt">&gt;</span>(Help)<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+<p>This will provide a pop-out for a user with the <code class="docutils literal"><span class="pre">How</span> <span class="pre">we</span> <span class="pre">envision</span> <span class="pre">versions</span> <span class="pre">working</span></code> section of the <code class="docutils literal"><span class="pre">versions</span></code> page.
+You can see this in action here:</p>
+<script type="text/javascript" src="https://media.readthedocs.org/javascript/jquery/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="https://media.readthedocs.org/javascript/jquery/jquery-migrate-1.2.1.min.js"></script>
+<link rel="stylesheet" href="http://localhost:5555/static/css/public.css">
+<script type="text/javascript" src="http://localhost:5555/static/javascript/bundle-public.js"></script>
+<script>
+ var READTHEDOCS_EMBED = {
+    'project': 'docs',
+    'version': 'latest',
+    'doc': 'versions',
+    'section': 'Versions'
+  }
+</script>
+<div id="help_container">
+  <a href="#" class="readthedocs-help-embed" data-section="How we envision versions working">(Help)</a>
+</div>
+<br>
+<br><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">All Read the Docs pages already have the library loaded, so you can ignore the <code class="docutils literal"><span class="pre">link</span></code> and first <code class="docutils literal"><span class="pre">script</span></code> tags on all documentation.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>We currently do not provide caching on this API.
+If the remote source you are including changes their page structure or deletes the content,
+your embed will break.</p>
+<p class="last">In Version 2 of this API we will provide a full-formed workflow that will stop this from happening.</p>
+</div>
+</div>
+</div>
+<div class="section" id="example-api-response">
+<h2>Example API Response<a class="headerlink" href="#example-api-response" title="Permalink to this headline">¶</a></h2>
+<p>Pure API use will return JSON:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;content&quot;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="s2">&quot;&lt;div class=\&quot;section\&quot; id=\&quot;encoded-data\&quot;&gt;\n&lt;h2&gt;Encoded Data?&lt;a class=\&quot;headerlink\&quot; href=\&quot;/docs/requests/en/latest/community/faq.html#encoded-data\&quot; title=\&quot;Permalink to this headline\&quot;&gt;\u00b6&lt;/a&gt;&lt;/h2&gt;\n&lt;p&gt;Requests automatically decompresses gzip-encoded responses, and does\nits best to decode response content to unicode when possible.&lt;/p&gt;\n&lt;p&gt;You can get direct access to the raw response (and even the socket),\nif needed as well.&lt;/p&gt;\n&lt;/div&gt;&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;wrapped&quot;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="s2">&quot;\n&lt;div class=\&quot;readthedocs-embed-wrapper\&quot;&gt;\n    &lt;div class=\&quot;readthedocs-embed-content\&quot;&gt;\n        &lt;div class=\&quot;section\&quot; id=\&quot;encoded-data\&quot;&gt;\n&lt;h2&gt;Encoded Data?&lt;a class=\&quot;headerlink\&quot; href=\&quot;/docs/requests/en/latest/community/faq.html#encoded-data\&quot; title=\&quot;Permalink to this headline\&quot;&gt;\u00b6&lt;/a&gt;&lt;/h2&gt;\n&lt;p&gt;Requests automatically decompresses gzip-encoded responses, and does\nits best to decode response content to unicode when possible.&lt;/p&gt;\n&lt;p&gt;You can get direct access to the raw response (and even the socket),\nif needed as well.&lt;/p&gt;\n&lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class=\&quot;readthedocs-embed-badge\&quot;&gt;\n        Embedded from &lt;a href=\&quot;/docs/requests/en/latest/community/faq.html\&quot;&gt;Read the Docs&lt;/a&gt;\n    &lt;/div&gt;\n&lt;/div&gt;\n    &quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;meta&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;project&quot;</span><span class="o">:</span> <span class="s2">&quot;requests&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;doc&quot;</span><span class="o">:</span> <span class="s2">&quot;community/faq&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;section&quot;</span><span class="o">:</span> <span class="s2">&quot;Encoded Data?&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;latest&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;modified&quot;</span><span class="o">:</span> <span class="s2">&quot;Wed, 04 Feb 2015 08:59:59 GMT&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;url&quot;</span><span class="o">:</span> <span class="s2">&quot;/docs/requests/en/latest/community/faq.html&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;headers&quot;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;Frequently Asked Questions&quot;</span><span class="o">:</span> <span class="s2">&quot;#&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;Encoded Data?&quot;</span><span class="o">:</span> <span class="s2">&quot;#encoded-data&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;Custom User-Agents?&quot;</span><span class="o">:</span> <span class="s2">&quot;#custom-user-agents&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;Why not Httplib2?&quot;</span><span class="o">:</span> <span class="s2">&quot;#why-not-httplib2&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;Python 3 Support?&quot;</span><span class="o">:</span> <span class="s2">&quot;#python-3-support&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;What are \u201chostname doesn\u2019t match\u201d errors?&quot;</span><span class="o">:</span> <span class="s2">&quot;#what-are-hostname-doesn-t-match-errors&quot;</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="contribute.html" class="btn btn-neutral float-right" title="Contributing to Read the Docs" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="api.html" class="btn btn-neutral" title="Read the Docs Public API" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010, Eric Holscher, Charlie Leifer, Bobby Grace.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

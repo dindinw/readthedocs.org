@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Automatic Redirects &mdash; Read The Docs 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Read The Docs 1.0 documentation" href="index.html"/>
+        <link rel="next" title="Content Embedding" href="features/embed.html"/>
+        <link rel="prev" title="User-defined Redirects" href="user-defined-redirects.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Read The Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="builds.html">Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Read the Docs features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="yaml-config.html">Read the Docs YAML Config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Read the Docs Public API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embed.html">Embed API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About Read the Docs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contributing to Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Read the Docs Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ethical-advertising.html">Ethical Advertising</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sponsors.html">Sponsors of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="open-source-philosophy.html">Read the Docs Open Source Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="story.html">The Story of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="talks.html">Talks about Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dmca/index.html">DMCA Takedown Policy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="webhooks.html">Webhooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternate_domains.html">Alternate Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="localization.html">Localization of Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vcs.html">VCS Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conda.html">Conda Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="single_version.html">Single Version Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user-defined-redirects.html">User-defined Redirects</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Automatic Redirects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#root-url">Root URL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rtfd-org">rtfd.org</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#supported-top-level-redirects">Supported Top-Level Redirects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#redirecting-to-a-page">Redirecting to a Page</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="features/embed.html">Content Embedding</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tests.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs.html">Building and Contributing to Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/standards.html">Development Standards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/buildenvironments.html">Build Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="symlinks.html">How we use symlinks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Interesting Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issue-labels.html">Overview of issue labels</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Business Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="business/index.html">Read the Docs Business Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Custom Install Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="custom_installs/index.html">Info about custom installs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Designer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Designing Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="theme.html">Read the Docs Theme</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Read The Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Automatic Redirects</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/automatic-redirects.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="automatic-redirects">
+<h1>Automatic Redirects<a class="headerlink" href="#automatic-redirects" title="Permalink to this headline">¶</a></h1>
+<p>Read the Docs supports redirecting certain URLs automatically.
+This is an overview of the set of redirects that are fully supported and will work into the future.</p>
+<div class="section" id="root-url">
+<h2>Root URL<a class="headerlink" href="#root-url" title="Permalink to this headline">¶</a></h2>
+<p>A link to the root of your documentation will redirect to the <em>default version</em>,
+as set in your project settings.
+For example:</p>
+<div class="highlight-python"><div class="highlight"><pre>pip.readthedocs.io -&gt; pip.readthedocs.io/en/latest/
+www.pip-installer.org -&gt; www.pip-installer.org/en/latest
+</pre></div>
+</div>
+<p>This only works for the root url, not for internal pages. It&#8217;s designed to redirect people from <a class="reference external" href="http://pip.readthedocs.io/">http://pip.readthedocs.io/</a> to the default version of your documentation, since serving up a 404 here would be a pretty terrible user experience. (If your &#8220;develop&#8221; branch was designated as your default version, then it would redirect to <a class="reference external" href="http://pip.readthedocs.io/en/develop">http://pip.readthedocs.io/en/develop</a>.) But, it&#8217;s not a universal redirecting solution. So, for example, a link to an internal page like <a class="reference external" href="http://pip.readthedocs.io/usage.html">http://pip.readthedocs.io/usage.html</a> doesn&#8217;t redirect to <a class="reference external" href="http://pip.readthedocs.io/en/latest/usage.html">http://pip.readthedocs.io/en/latest/usage.html</a>.</p>
+<p>The reasoning behind this is that RTD organizes the URLs for docs so that multiple translations and multiple versions of your docs can be organized logically and consistently for all projects that RTD hosts. For the way that RTD views docs, <a class="reference external" href="http://pip.readthedocs.io/en/latest/">http://pip.readthedocs.io/en/latest/</a> is the root directory for your default documentation in English, not <a class="reference external" href="http://pip.readthedocs.io/">http://pip.readthedocs.io/</a>. Just like <a class="reference external" href="http://pip.readthedocs.io/en/develop/">http://pip.readthedocs.io/en/develop/</a> is the root for your development documentation in English.</p>
+<p>Among all the multiple versions of docs, you can choose which is the &#8220;default&#8221; version for RTD to display, which usually corresponds to the git branch of the most recent official release from your project.</p>
+<div class="section" id="rtfd-org">
+<h3>rtfd.org<a class="headerlink" href="#rtfd-org" title="Permalink to this headline">¶</a></h3>
+<p>Links to rtfd.org are treated the same way as above.
+They redirect the root URL to the default version of the project.
+They are intended to be easy and short for people to type.</p>
+</div>
+</div>
+<div class="section" id="supported-top-level-redirects">
+<h2>Supported Top-Level Redirects<a class="headerlink" href="#supported-top-level-redirects" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These &#8220;implicit&#8221; redirects are supported for legacy reasons.
+We will not be adding support for any more magic redirects.
+If you want additional redirects,
+they should live at a prefix like <a class="reference internal" href="#page-redirect"><span>Redirecting to a Page</span></a></p>
+</div>
+<p>The main challenge of URL routing in Read the Docs is handling redirects correctly. Both in the interest of redirecting older URLs that are now obsolete, and in the interest of handling &#8220;logical-looking&#8221; URLs (leaving out the lang_slug or version_slug shouldn&#8217;t result in a 404), the following redirects are supported:</p>
+<div class="highlight-python"><div class="highlight"><pre>/          -&gt; /en/latest/
+/en/       -&gt; /en/latest/
+/latest/   -&gt; /en/latest/
+</pre></div>
+</div>
+<p>The language redirect will work for any of the defined <code class="docutils literal"><span class="pre">LANGUAGE_CODES</span></code> we support.
+The version redirect will work for supported versions.</p>
+</div>
+<div class="section" id="redirecting-to-a-page">
+<span id="page-redirect"></span><h2>Redirecting to a Page<a class="headerlink" href="#redirecting-to-a-page" title="Permalink to this headline">¶</a></h2>
+<p>You can link to a specific page and have it redirect to your default version.
+This is done with the <code class="docutils literal"><span class="pre">/page/</span></code> URL.
+For example:</p>
+<div class="highlight-python"><div class="highlight"><pre>pip.readthedocs.io/page/quickstart.html -&gt; pip.readthedocs.io/en/latest/quickstart.html
+www.pip-installer.org/page/quickstart.html -&gt; www.pip-installer.org/en/latest/quickstart.html
+</pre></div>
+</div>
+<p>This allows you to create links that are always up to date.</p>
+<p>Another way to handle this is the <em>latest</em> version.
+You can set your <code class="docutils literal"><span class="pre">latest</span></code> version to a specific version and just always link to latest.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="features/embed.html" class="btn btn-neutral float-right" title="Content Embedding" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="user-defined-redirects.html" class="btn btn-neutral" title="User-defined Redirects" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010, Eric Holscher, Charlie Leifer, Bobby Grace.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

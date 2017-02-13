@@ -1,0 +1,395 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation &mdash; Read The Docs 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Read The Docs 1.0 documentation" href="index.html"/>
+        <link rel="next" title="API" href="api/index.html"/>
+        <link rel="prev" title="Content Embedding" href="features/embed.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Read The Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="builds.html">Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Read the Docs features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="yaml-config.html">Read the Docs YAML Config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Read the Docs Public API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embed.html">Embed API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About Read the Docs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contributing to Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Read the Docs Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ethical-advertising.html">Ethical Advertising</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sponsors.html">Sponsors of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="open-source-philosophy.html">Read the Docs Open Source Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="story.html">The Story of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="talks.html">Talks about Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dmca/index.html">DMCA Takedown Policy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="webhooks.html">Webhooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternate_domains.html">Alternate Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="localization.html">Localization of Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vcs.html">VCS Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conda.html">Conda Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="single_version.html">Single Version Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user-defined-redirects.html">User-defined Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic-redirects.html">Automatic Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features/embed.html">Content Embedding</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-s-available">What&#8217;s available</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-new-docs">Creating new Docs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importing-existing-docs">Importing existing docs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tests.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs.html">Building and Contributing to Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/standards.html">Development Standards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/buildenvironments.html">Build Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="symlinks.html">How we use symlinks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Interesting Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issue-labels.html">Overview of issue labels</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Business Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="business/index.html">Read the Docs Business Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Custom Install Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="custom_installs/index.html">Info about custom installs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Designer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Designing Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="theme.html">Read the Docs Theme</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Read The Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Installation</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/install.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation">
+<span id="installing-read-the-docs"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>Here is a step by step plan on how to install Read the Docs.
+It will get you to a point of having a local running instance.</p>
+<p>First, obtain <a class="reference external" href="http://www.python.org/">Python 2.7</a> and <a class="reference external" href="http://pypi.python.org/pypi/virtualenv">virtualenv</a> if you do not already have them. Using a
+virtual environment will make the installation easier, and will help to avoid
+clutter in your system-wide libraries. You will also need <a class="reference external" href="http://git-scm.com/">Git</a> in order to
+clone the repository. If you plan to import Python 3 project to your RTD then you&#8217;ll
+need to install Python 3 with virtualenv in your system as well.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>If you are having trouble on OS X Mavericks (or possibly other versions of
+OS X) with building <code class="docutils literal"><span class="pre">lxml</span></code>, you probably might need to use <a class="reference external" href="http://brew.sh/">Homebrew</a>
+to <code class="docutils literal"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">libxml2</span></code>, and invoke the install with:</p>
+<div class="last highlight-python"><div class="highlight"><pre>CFLAGS=-I/usr/local/opt/libxml2/include/libxml2 \
+LDFLAGS=-L/usr/local/opt/libxml2/lib \
+pip install -r requirements.txt
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Linux users may find they need to install a few additional packages
+in order to successfully execute <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code>.
+For example, a clean install of Ubuntu 14.04 LTS will require the
+following packages:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo apt-get install build-essential
+sudo apt-get install python-dev python-pip python-setuptools
+sudo apt-get install libxml2-dev libxslt1-dev zlib1g-dev
+</pre></div>
+</div>
+<p class="last">Users of other Linux distributions may need to install the equivalent
+packages, depending on their system configuration.</p>
+</div>
+<p>You will need to verify that your pip version is higher than 1.5 you can do this as such:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">pip</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>If this is not the case please update your pip version before continuing:</p>
+<div class="highlight-python"><div class="highlight"><pre>pip install --upgrade pip
+</pre></div>
+</div>
+<p>Once you have these, create a virtual environment somewhere on your disk, then
+activate it:</p>
+<div class="highlight-python"><div class="highlight"><pre>virtualenv rtd
+cd rtd
+source bin/activate
+</pre></div>
+</div>
+<p>Create a folder in here, and clone the repository:</p>
+<div class="highlight-python"><div class="highlight"><pre>mkdir checkouts
+cd checkouts
+git clone https://github.com/rtfd/readthedocs.org.git
+</pre></div>
+</div>
+<p>Next, install the dependencies using <code class="docutils literal"><span class="pre">pip</span></code> (included inside of <a class="reference external" href="http://pypi.python.org/pypi/virtualenv">virtualenv</a>):</p>
+<div class="highlight-python"><div class="highlight"><pre>cd readthedocs.org
+pip install -r requirements.txt
+</pre></div>
+</div>
+<p>This may take a while, so go grab a beverage. When it&#8217;s done, build your
+database:</p>
+<div class="highlight-python"><div class="highlight"><pre>python manage.py migrate
+</pre></div>
+</div>
+<p>Then please create a superuser account for Django:</p>
+<div class="highlight-python"><div class="highlight"><pre>python manage.py createsuperuser
+</pre></div>
+</div>
+<p>Now let&#8217;s properly generate the static assets:</p>
+<div class="highlight-python"><div class="highlight"><pre>python manage.py collectstatic
+</pre></div>
+</div>
+<p>By now, it is the right time to load in a couple users and a test project:</p>
+<div class="highlight-python"><div class="highlight"><pre>python manage.py loaddata test_data
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you do not opt to install test data, you&#8217;ll need to create an account for
+API use and set <code class="docutils literal"><span class="pre">SLUMBER_USERNAME</span></code> and <code class="docutils literal"><span class="pre">SLUMBER_PASSWORD</span></code> in order for
+everything to work properly.</p>
+</div>
+<p>Finally, you&#8217;re ready to start the webserver:</p>
+<div class="highlight-python"><div class="highlight"><pre>python manage.py runserver
+</pre></div>
+</div>
+<p>Visit <a class="reference external" href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> in your browser to see how it looks; you can use
+the admin interface via <a class="reference external" href="http://127.0.0.1:8000/admin">http://127.0.0.1:8000/admin</a> (logging in with the
+superuser account you just created).</p>
+<p>For builds to properly kick off as expected, it is necessary the port
+you&#8217;re serving on (i.e. <code class="docutils literal"><span class="pre">runserver</span> <span class="pre">0.0.0.0:8080</span></code>) match the port defined
+in <code class="docutils literal"><span class="pre">PRODUCTION_DOMAIN</span></code>. You can utilize <code class="docutils literal"><span class="pre">local_settings.py</span></code> to modify this.
+(By default, it&#8217;s <code class="docutils literal"><span class="pre">localhost:8000</span></code>)</p>
+<p>While the webserver is running, you can build documentation for the latest version of
+a project called &#8216;pip&#8217; with the <code class="docutils literal"><span class="pre">update_repos</span></code> command.  You can replace &#8216;pip&#8217;
+with the name of any added project:</p>
+<div class="highlight-python"><div class="highlight"><pre>python manage.py update_repos pip
+</pre></div>
+</div>
+<div class="section" id="what-s-available">
+<h2>What&#8217;s available<a class="headerlink" href="#what-s-available" title="Permalink to this headline">¶</a></h2>
+<p>After registering with the site (or creating yourself a superuser account),
+you will be able to log in and view the <a class="reference external" href="http://readthedocs.org/dashboard/">dashboard</a>.</p>
+<p>From the dashboard you can import your existing
+docs provided that they are in a git or mercurial repo.</p>
+<div class="section" id="creating-new-docs">
+<h3>Creating new Docs<a class="headerlink" href="#creating-new-docs" title="Permalink to this headline">¶</a></h3>
+<p>One of the goals of <a class="reference external" href="http://readthedocs.org">readthedocs.org</a> is to make it
+easy for any open source developer to get high quality hosted docs with great
+visibility!  We provide a simple editor and two sample pages whenever
+a new project is created.  From there its up to you to fill in the gaps - we&#8217;ll
+build the docs, give you access to history on every revision of your files,
+and we plan on adding more features in the weeks and months to come.</p>
+</div>
+<div class="section" id="importing-existing-docs">
+<h3>Importing existing docs<a class="headerlink" href="#importing-existing-docs" title="Permalink to this headline">¶</a></h3>
+<p>The other side of <a class="reference external" href="http://readthedocs.org">readthedocs.org</a> is hosting the
+docs you&#8217;ve already built.  Simply provide us with the clone url to your repo,
+we&#8217;ll pull your code, extract your docs, and build them!  We make available
+a post-commit webhook that can be configured to update the docs on our site
+whenever you commit to your repo, effectively letting you &#8216;set it and forget it&#8217;.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api/index.html" class="btn btn-neutral float-right" title="API" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="features/embed.html" class="btn btn-neutral" title="Content Embedding" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010, Eric Holscher, Charlie Leifer, Bobby Grace.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

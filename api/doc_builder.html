@@ -1,0 +1,623 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>readthedocs.doc_builder &mdash; Read The Docs 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Read The Docs 1.0 documentation" href="../index.html"/>
+        <link rel="up" title="API" href="index.html"/>
+        <link rel="next" title="readthedocs.core" href="core.html"/>
+        <link rel="prev" title="readthedocs.builds" href="builds.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Read The Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Read the Docs features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yaml-config.html">Read the Docs YAML Config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">Read the Docs Public API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Embed API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About Read the Docs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contribute.html">Contributing to Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../team.html">Read the Docs Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ethical-advertising.html">Ethical Advertising</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sponsors.html">Sponsors of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../open-source-philosophy.html">Read the Docs Open Source Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../story.html">The Story of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../talks.html">Talks about Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dmca/index.html">DMCA Takedown Policy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../webhooks.html">Webhooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../alternate_domains.html">Alternate Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization of Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vcs.html">VCS Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conda.html">Conda Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../single_version.html">Single Version Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../privacy.html">Privacy Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">User-defined Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automatic-redirects.html">Automatic Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../features/embed.html">Content Embedding</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="bookmarks.html"><code class="docutils literal"><span class="pre">readthedocs.bookmarks</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="builds.html"><code class="docutils literal"><span class="pre">readthedocs.builds</span></code></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">readthedocs.doc_builder</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.doc_builder.base"><code class="docutils literal"><span class="pre">readthedocs.doc_builder.base</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.doc_builder.environments"><code class="docutils literal"><span class="pre">readthedocs.doc_builder.environments</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#readthedocs-doc-builder-backends"><code class="docutils literal"><span class="pre">readthedocs.doc_builder.backends</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.doc_builder.backends.sphinx"><code class="docutils literal"><span class="pre">readthedocs.doc_builder.backends.sphinx</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="core.html"><code class="docutils literal"><span class="pre">readthedocs.core</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html"><code class="docutils literal"><span class="pre">readthedocs.projects</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="vcs_support.html"><code class="docutils literal"><span class="pre">readthedocs.vcs_support</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tests.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs.html">Building and Contributing to Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/standards.html">Development Standards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/buildenvironments.html">Build Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../symlinks.html">How we use symlinks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings.html">Interesting Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issue-labels.html">Overview of issue labels</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Business Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../business/index.html">Read the Docs Business Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Custom Install Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../custom_installs/index.html">Info about custom installs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Designer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../design.html">Designing Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../theme.html">Read the Docs Theme</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Read The Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">API</a> &raquo;</li>
+      
+    <li><code class="docutils literal"><span class="pre">readthedocs.doc_builder</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/api/doc_builder.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="readthedocs-doc-builder">
+<h1><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.doc_builder</span></code><a class="headerlink" href="#readthedocs-doc-builder" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-readthedocs.doc_builder.base">
+<span id="readthedocs-doc-builder-base"></span><h2><a class="reference internal" href="#module-readthedocs.doc_builder.base" title="readthedocs.doc_builder.base"><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.doc_builder.base</span></code></a><a class="headerlink" href="#module-readthedocs.doc_builder.base" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="readthedocs.doc_builder.base.BaseBuilder">
+<em class="property">class </em><code class="descclassname">readthedocs.doc_builder.base.</code><code class="descname">BaseBuilder</code><span class="sig-paren">(</span><em>build_env</em>, <em>python_env</em>, <em>force=False</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.base.BaseBuilder" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Base for all Builders. Defines the API for subclasses.</p>
+<p>Expects subclasses to define <code class="docutils literal"><span class="pre">old_artifact_path</span></code>,
+which points at the directory where artifacts should be copied from.</p>
+<dl class="method">
+<dt id="readthedocs.doc_builder.base.BaseBuilder.build">
+<code class="descname">build</code><span class="sig-paren">(</span><em>id=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.base.BaseBuilder.build" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do the actual building of the documentation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.doc_builder.base.BaseBuilder.clean">
+<code class="descname">clean</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.base.BaseBuilder.clean" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clean the path where documentation will be built</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.doc_builder.base.BaseBuilder.create_index">
+<code class="descname">create_index</code><span class="sig-paren">(</span><em>extension='md'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.base.BaseBuilder.create_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an index file if it needs it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.doc_builder.base.BaseBuilder.docs_dir">
+<code class="descname">docs_dir</code><span class="sig-paren">(</span><em>docs_dir=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.base.BaseBuilder.docs_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle creating a custom docs_dir if it doesn&#8217;t exist.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.doc_builder.base.BaseBuilder.force">
+<code class="descname">force</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.base.BaseBuilder.force" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional step to force a build even when nothing has changed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.doc_builder.base.BaseBuilder.move">
+<code class="descname">move</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.base.BaseBuilder.move" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move the documentation from it&#8217;s generated place to its artifact directory.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.doc_builder.base.BaseBuilder.run">
+<code class="descname">run</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.base.BaseBuilder.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Proxy run to build environment</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-readthedocs.doc_builder.environments">
+<span id="readthedocs-doc-builder-environments"></span><h2><a class="reference internal" href="#module-readthedocs.doc_builder.environments" title="readthedocs.doc_builder.environments"><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.doc_builder.environments</span></code></a><a class="headerlink" href="#module-readthedocs.doc_builder.environments" title="Permalink to this headline">¶</a></h2>
+<p>Documentation Builder Environments</p>
+<dl class="class">
+<dt id="readthedocs.doc_builder.environments.BuildCommand">
+<em class="property">class </em><code class="descclassname">readthedocs.doc_builder.environments.</code><code class="descname">BuildCommand</code><span class="sig-paren">(</span><em>command</em>, <em>cwd=None</em>, <em>shell=False</em>, <em>environment=None</em>, <em>combine_output=True</em>, <em>input_data=None</em>, <em>build_env=None</em>, <em>bin_path=None</em>, <em>description=None</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.BuildCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrap command execution for execution in build environments</p>
+<p>This wraps subprocess commands with some logic to handle exceptions,
+logging, and setting up the env for the build command.</p>
+<p>This acts a mapping of sorts to the API representation of the
+<a class="reference internal" href="builds.html#readthedocs.builds.models.BuildCommandResult" title="readthedocs.builds.models.BuildCommandResult"><code class="xref py py-class docutils literal"><span class="pre">readthedocs.builds.models.BuildCommandResult</span></code></a> model.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>command</strong> &#8211; string or array of command parameters</li>
+<li><strong>cwd</strong> &#8211; current working path for the command</li>
+<li><strong>shell</strong> &#8211; execute command in shell, default=False</li>
+<li><strong>environment</strong> (<a class="reference external" href="http://python.readthedocs.io/en/latest/library/stdtypes.html#dict" title="(in Python v3.6)"><em>dict</em></a>) &#8211; environment variables to add to environment</li>
+<li><strong>combine_output</strong> &#8211; combine stdout/stderr, default=True</li>
+<li><strong>input_data</strong> (<a class="reference external" href="http://python.readthedocs.io/en/latest/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) &#8211; data to pass in on stdin</li>
+<li><strong>build_env</strong> &#8211; build environment to use to execute commands</li>
+<li><strong>bin_path</strong> &#8211; binary path to add to PATH resolution</li>
+<li><strong>description</strong> &#8211; a more grokable description of the command being run</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="readthedocs.doc_builder.environments.BuildCommand.get_command">
+<code class="descname">get_command</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.BuildCommand.get_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flatten command</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.doc_builder.environments.BuildCommand.run">
+<code class="descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.BuildCommand.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set up subprocess and execute command</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cmd_input</strong> (<a class="reference external" href="http://python.readthedocs.io/en/latest/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) &#8211; input to pass to command in STDIN</li>
+<li><strong>combine_output</strong> &#8211; combine STDERR into STDOUT</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.doc_builder.environments.BuildCommand.save">
+<code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.BuildCommand.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save this command and result via the API</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.doc_builder.environments.BuildEnvironment">
+<em class="property">class </em><code class="descclassname">readthedocs.doc_builder.environments.</code><code class="descname">BuildEnvironment</code><span class="sig-paren">(</span><em>project=None</em>, <em>version=None</em>, <em>build=None</em>, <em>record=True</em>, <em>environment=None</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.BuildEnvironment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base build environment</p>
+<p>Base class for wrapping command execution for build steps. This provides a
+context for command execution and reporting, and eventually performs updates
+on the build object itself, reporting success/failure, as well as top-level
+failures.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>project</strong> &#8211; Project that is being built</li>
+<li><strong>version</strong> &#8211; Project version that is being built</li>
+<li><strong>build</strong> &#8211; Build instance</li>
+<li><strong>record</strong> &#8211; Record status of build object</li>
+<li><strong>environment</strong> &#8211; shell environment variables</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="readthedocs.doc_builder.environments.BuildEnvironment.done">
+<code class="descname">done</code><a class="headerlink" href="#readthedocs.doc_builder.environments.BuildEnvironment.done" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is build in finished state</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="readthedocs.doc_builder.environments.BuildEnvironment.failed">
+<code class="descname">failed</code><a class="headerlink" href="#readthedocs.doc_builder.environments.BuildEnvironment.failed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is build completed, but has top level failure or failing commands</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.doc_builder.environments.BuildEnvironment.handle_exception">
+<code class="descname">handle_exception</code><span class="sig-paren">(</span><em>exc_type</em>, <em>exc_value</em>, <em>_</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.BuildEnvironment.handle_exception" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exception handling for __enter__ and __exit__</p>
+<p>This reports on the exception we&#8217;re handling and special cases
+subclasses of BuildEnvironmentException.  For
+<code class="xref py py-class docutils literal"><span class="pre">BuildEnvironmentWarning</span></code>, exit this context gracefully, but
+don&#8217;t mark the build as a failure.  For all other exception classes,
+including <code class="xref py py-class docutils literal"><span class="pre">BuildEnvironmentError</span></code>, the build will be marked as
+a failure and the context will be gracefully exited.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.doc_builder.environments.BuildEnvironment.run">
+<code class="descname">run</code><span class="sig-paren">(</span><em>*cmd</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.BuildEnvironment.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shortcut to run command from environment</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.doc_builder.environments.BuildEnvironment.run_command_class">
+<code class="descname">run_command_class</code><span class="sig-paren">(</span><em>cls</em>, <em>cmd</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.BuildEnvironment.run_command_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run command from this environment</p>
+<p>Use <code class="docutils literal"><span class="pre">cls</span></code> to instantiate a command</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>warn_only</strong> &#8211; Don&#8217;t raise an exception on command failure</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="readthedocs.doc_builder.environments.BuildEnvironment.successful">
+<code class="descname">successful</code><a class="headerlink" href="#readthedocs.doc_builder.environments.BuildEnvironment.successful" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is build completed, without top level failures or failing commands</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.doc_builder.environments.BuildEnvironment.update_build">
+<code class="descname">update_build</code><span class="sig-paren">(</span><em>state=None</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.BuildEnvironment.update_build" title="Permalink to this definition">¶</a></dt>
+<dd><p>Record a build by hitting the API</p>
+<p>This step is skipped if we aren&#8217;t recording the build, or if we don&#8217;t
+want to record successful builds yet (if we are running setup commands
+for the build)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.doc_builder.environments.DockerBuildCommand">
+<em class="property">class </em><code class="descclassname">readthedocs.doc_builder.environments.</code><code class="descname">DockerBuildCommand</code><span class="sig-paren">(</span><em>command</em>, <em>cwd=None</em>, <em>shell=False</em>, <em>environment=None</em>, <em>combine_output=True</em>, <em>input_data=None</em>, <em>build_env=None</em>, <em>bin_path=None</em>, <em>description=None</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.DockerBuildCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a docker container and run a command inside the container</p>
+<p>Build command to execute in docker container</p>
+<dl class="method">
+<dt id="readthedocs.doc_builder.environments.DockerBuildCommand.get_wrapped_command">
+<code class="descname">get_wrapped_command</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.DockerBuildCommand.get_wrapped_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Escape special bash characters in command to wrap in shell</p>
+<p>In order to set the current working path inside a docker container, we
+need to wrap the command in a shell call manually. Some characters will
+be interpreted as shell characters without escaping, such as: <code class="docutils literal"><span class="pre">pip</span>
+<span class="pre">install</span> <span class="pre">requests&lt;0.8</span></code>. This escapes a good majority of those
+characters.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.doc_builder.environments.DockerBuildCommand.run">
+<code class="descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.DockerBuildCommand.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute command in existing Docker container</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>cmd_input</strong> (<a class="reference external" href="http://python.readthedocs.io/en/latest/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) &#8211; input to pass to command in STDIN</li>
+<li><strong>combine_output</strong> &#8211; combine STDERR into STDOUT</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.doc_builder.environments.DockerEnvironment">
+<em class="property">class </em><code class="descclassname">readthedocs.doc_builder.environments.</code><code class="descname">DockerEnvironment</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.DockerEnvironment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Docker build environment, uses docker to contain builds</p>
+<p>If <code class="xref py py-data docutils literal"><span class="pre">settings.DOCKER_ENABLE</span></code> is true, build documentation inside a
+docker container, instead of the host system, using this build environment
+class.  The build command creates a docker container from a pre-built image,
+defined by <code class="xref py py-data docutils literal"><span class="pre">settings.DOCKER_IMAGE</span></code>.  This container is started with
+a mount to the project&#8217;s build path under <code class="docutils literal"><span class="pre">user_builds</span></code> on the host
+machine, walling off project builds from reading/writing other projects&#8217;
+data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>docker_socket</strong> &#8211; Override to Docker socket URI</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="readthedocs.doc_builder.environments.DockerEnvironment.command_class">
+<code class="descname">command_class</code><a class="headerlink" href="#readthedocs.doc_builder.environments.DockerEnvironment.command_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#readthedocs.doc_builder.environments.DockerBuildCommand" title="readthedocs.doc_builder.environments.DockerBuildCommand"><code class="xref py py-class docutils literal"><span class="pre">DockerBuildCommand</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="readthedocs.doc_builder.environments.DockerEnvironment.container_id">
+<code class="descname">container_id</code><a class="headerlink" href="#readthedocs.doc_builder.environments.DockerEnvironment.container_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return id of container if it is valid</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.doc_builder.environments.DockerEnvironment.container_state">
+<code class="descname">container_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.DockerEnvironment.container_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get container state</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.doc_builder.environments.DockerEnvironment.create_container">
+<code class="descname">create_container</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.DockerEnvironment.create_container" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create docker container</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.doc_builder.environments.DockerEnvironment.get_client">
+<code class="descname">get_client</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.DockerEnvironment.get_client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Docker client connection</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.doc_builder.environments.DockerEnvironment.update_build_from_container_state">
+<code class="descname">update_build_from_container_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.DockerEnvironment.update_build_from_container_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update buildenv state from container state</p>
+<p>In the case of the parent command exiting before the exec commands
+finish and the container is destroyed, or in the case of OOM on the
+container, set a failure state and error message explaining the failure
+on the buildenv.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.doc_builder.environments.LocalEnvironment">
+<em class="property">class </em><code class="descclassname">readthedocs.doc_builder.environments.</code><code class="descname">LocalEnvironment</code><span class="sig-paren">(</span><em>project=None</em>, <em>version=None</em>, <em>build=None</em>, <em>record=True</em>, <em>environment=None</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.environments.LocalEnvironment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Local execution environment</p>
+<dl class="attribute">
+<dt id="readthedocs.doc_builder.environments.LocalEnvironment.command_class">
+<code class="descname">command_class</code><a class="headerlink" href="#readthedocs.doc_builder.environments.LocalEnvironment.command_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#readthedocs.doc_builder.environments.BuildCommand" title="readthedocs.doc_builder.environments.BuildCommand"><code class="xref py py-class docutils literal"><span class="pre">BuildCommand</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="readthedocs-doc-builder-backends">
+<h2><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.doc_builder.backends</span></code><a class="headerlink" href="#readthedocs-doc-builder-backends" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-readthedocs.doc_builder.backends.sphinx">
+<span id="readthedocs-doc-builder-backends-sphinx"></span><h2><a class="reference internal" href="#module-readthedocs.doc_builder.backends.sphinx" title="readthedocs.doc_builder.backends.sphinx"><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.doc_builder.backends.sphinx</span></code></a><a class="headerlink" href="#module-readthedocs.doc_builder.backends.sphinx" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="readthedocs.doc_builder.backends.sphinx.BaseSphinx">
+<em class="property">class </em><code class="descclassname">readthedocs.doc_builder.backends.sphinx.</code><code class="descname">BaseSphinx</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.backends.sphinx.BaseSphinx" title="Permalink to this definition">¶</a></dt>
+<dd><p>The parent for most sphinx builders.</p>
+<dl class="method">
+<dt id="readthedocs.doc_builder.backends.sphinx.BaseSphinx.append_conf">
+<code class="descname">append_conf</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.backends.sphinx.BaseSphinx.append_conf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Modify the given <code class="docutils literal"><span class="pre">conf.py</span></code> file from a whitelisted user&#8217;s project.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.doc_builder.backends.sphinx.DockerLatexBuildCommand">
+<em class="property">class </em><code class="descclassname">readthedocs.doc_builder.backends.sphinx.</code><code class="descname">DockerLatexBuildCommand</code><span class="sig-paren">(</span><em>command</em>, <em>cwd=None</em>, <em>shell=False</em>, <em>environment=None</em>, <em>combine_output=True</em>, <em>input_data=None</em>, <em>build_env=None</em>, <em>bin_path=None</em>, <em>description=None</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.backends.sphinx.DockerLatexBuildCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ignore LaTeX exit code if there was file output</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.doc_builder.backends.sphinx.LatexBuildCommand">
+<em class="property">class </em><code class="descclassname">readthedocs.doc_builder.backends.sphinx.</code><code class="descname">LatexBuildCommand</code><span class="sig-paren">(</span><em>command</em>, <em>cwd=None</em>, <em>shell=False</em>, <em>environment=None</em>, <em>combine_output=True</em>, <em>input_data=None</em>, <em>build_env=None</em>, <em>bin_path=None</em>, <em>description=None</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.doc_builder.backends.sphinx.LatexBuildCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ignore LaTeX exit code if there was file output</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="core.html" class="btn btn-neutral float-right" title="readthedocs.core" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="builds.html" class="btn btn-neutral" title="readthedocs.builds" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010, Eric Holscher, Charlie Leifer, Bobby Grace.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

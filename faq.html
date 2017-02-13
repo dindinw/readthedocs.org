@@ -1,0 +1,463 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Frequently Asked Questions &mdash; Read The Docs 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Read The Docs 1.0 documentation" href="index.html"/>
+        <link rel="next" title="Read the Docs YAML Config" href="yaml-config.html"/>
+        <link rel="prev" title="Support" href="support.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Read The Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="builds.html">Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Read the Docs features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#my-project-isn-t-building-with-autodoc">My project isn&#8217;t building with autodoc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-do-i-change-my-slug-the-url-your-docs-are-served-at">How do I change my slug (the URL your docs are served at)?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-do-i-change-behavior-for-read-the-docs">How do I change behavior for Read the Docs?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#i-get-import-errors-on-libraries-that-depend-on-c-modules">I get import errors on libraries that depend on C modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#client-error-401-when-building-documentation"><code class="docutils literal"><span class="pre">Client</span> <span class="pre">Error</span> <span class="pre">401</span></code> when building documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deleting-a-stale-or-broken-build-environment">Deleting a stale or broken build environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-do-i-host-multiple-projects-on-one-cname">How do I host multiple projects on one CNAME?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#where-do-i-need-to-put-my-docs-for-rtd-to-find-it">Where do I need to put my docs for RTD to find it?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#i-want-to-use-the-blue-default-sphinx-theme">I want to use the Blue/Default Sphinx theme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#i-want-to-use-the-read-the-docs-theme-locally">I want to use the Read the Docs theme locally</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#image-scaling-doesn-t-work-in-my-documentation">Image scaling doesn&#8217;t work in my documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#i-want-comments-in-my-docs">I want comments in my docs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-do-i-support-multiple-languages-of-documentation">How do I support multiple languages of documentation?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#do-i-need-to-be-whitelisted">Do I need to be whitelisted?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#does-read-the-docs-work-well-with-legible-docstrings">Does Read The Docs work well with &#8220;legible&#8221; docstrings?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#can-i-document-a-python-package-that-is-not-at-the-root-of-my-repository">Can I document a python package that is not at the root of my repository?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="yaml-config.html">Read the Docs YAML Config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Read the Docs Public API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embed.html">Embed API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About Read the Docs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contributing to Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Read the Docs Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ethical-advertising.html">Ethical Advertising</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sponsors.html">Sponsors of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="open-source-philosophy.html">Read the Docs Open Source Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="story.html">The Story of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="talks.html">Talks about Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dmca/index.html">DMCA Takedown Policy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="webhooks.html">Webhooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternate_domains.html">Alternate Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="localization.html">Localization of Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vcs.html">VCS Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conda.html">Conda Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="single_version.html">Single Version Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user-defined-redirects.html">User-defined Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic-redirects.html">Automatic Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features/embed.html">Content Embedding</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tests.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs.html">Building and Contributing to Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/standards.html">Development Standards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/buildenvironments.html">Build Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="symlinks.html">How we use symlinks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Interesting Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issue-labels.html">Overview of issue labels</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Business Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="business/index.html">Read the Docs Business Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Custom Install Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="custom_installs/index.html">Info about custom installs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Designer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Designing Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="theme.html">Read the Docs Theme</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Read The Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Frequently Asked Questions</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/faq.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="frequently-asked-questions">
+<h1>Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="my-project-isn-t-building-with-autodoc">
+<h2>My project isn&#8217;t building with autodoc<a class="headerlink" href="#my-project-isn-t-building-with-autodoc" title="Permalink to this headline">¶</a></h2>
+<p>First, you should check out the Builds tab of your project. That records all of the build attempts that RTD has made to build your project. If you see <code class="docutils literal"><span class="pre">ImportError</span></code> messages for custom Python modules, you should enable the virtualenv feature in the Admin page of your project, which will install your project into a virtualenv, and allow you to specify a <code class="docutils literal"><span class="pre">requirements.txt</span></code> file for your project.</p>
+<p>If you are still seeing errors because of C library dependencies, please see the below section about that.</p>
+</div>
+<div class="section" id="how-do-i-change-my-slug-the-url-your-docs-are-served-at">
+<h2>How do I change my slug (the URL your docs are served at)?<a class="headerlink" href="#how-do-i-change-my-slug-the-url-your-docs-are-served-at" title="Permalink to this headline">¶</a></h2>
+<p>We don&#8217;t support allowing folks to change the slug for their project.
+You can update the name which is shown on the site,
+but not the actual URL that documentation is served.</p>
+<p>The main reason for this is that all existing URLs to the content will break.
+You can delete and re-create the project with the proper name to get a new slug,
+but you really shouldn&#8217;t do this if you have existing inbound links,
+as it <a class="reference external" href="http://www.w3.org/Provider/Style/URI.html">breaks the internet</a>.</p>
+</div>
+<div class="section" id="how-do-i-change-behavior-for-read-the-docs">
+<h2>How do I change behavior for Read the Docs?<a class="headerlink" href="#how-do-i-change-behavior-for-read-the-docs" title="Permalink to this headline">¶</a></h2>
+<p>When RTD builds your project, it sets the <span class="target" id="index-0"></span><code class="xref std std-envvar docutils literal"><span class="pre">READTHEDOCS</span></code> environment
+variable to the string <a class="reference external" href="http://python.readthedocs.io/en/latest/library/constants.html#True" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">True</span></code></a>. So within your Sphinx <code class="file docutils literal"><span class="pre">conf.py</span></code> file, you
+can vary the behavior based on this. For example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">os</span>
+<span class="n">on_rtd</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&#39;READTHEDOCS&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s">&#39;True&#39;</span>
+<span class="k">if</span> <span class="n">on_rtd</span><span class="p">:</span>
+    <span class="n">html_theme</span> <span class="o">=</span> <span class="s">&#39;default&#39;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">html_theme</span> <span class="o">=</span> <span class="s">&#39;nature&#39;</span>
+</pre></div>
+</div>
+<p>The <span class="target" id="index-1"></span><code class="xref std std-envvar docutils literal"><span class="pre">READTHEDOCS</span></code> variable is also available in the Sphinx build
+environment, and will be set to <code class="docutils literal"><span class="pre">True</span></code> when building on RTD:</p>
+<div class="highlight-python"><div class="highlight"><pre>{% if READTHEDOCS %}
+Woo
+{% endif %}
+</pre></div>
+</div>
+</div>
+<div class="section" id="i-get-import-errors-on-libraries-that-depend-on-c-modules">
+<h2>I get import errors on libraries that depend on C modules<a class="headerlink" href="#i-get-import-errors-on-libraries-that-depend-on-c-modules" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Another use case for this is when you have a module with a C extension.</p>
+</div>
+<p>This happens because our build system doesn&#8217;t have the dependencies for building your project. This happens with things like libevent and mysql, and other python things that depend on C libraries. We can&#8217;t support installing random C binaries on our system, so there is another way to fix these imports.</p>
+<p>You can mock out the imports for these modules in your <code class="docutils literal"><span class="pre">conf.py</span></code> with the following snippet:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">unittest.mock</span> <span class="kn">import</span> <span class="n">MagicMock</span>
+
+<span class="k">class</span> <span class="nc">Mock</span><span class="p">(</span><span class="n">MagicMock</span><span class="p">):</span>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">__getattr__</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">MagicMock</span><span class="p">()</span>
+
+<span class="n">MOCK_MODULES</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;pygtk&#39;</span><span class="p">,</span> <span class="s">&#39;gtk&#39;</span><span class="p">,</span> <span class="s">&#39;gobject&#39;</span><span class="p">,</span> <span class="s">&#39;argparse&#39;</span><span class="p">,</span> <span class="s">&#39;numpy&#39;</span><span class="p">,</span> <span class="s">&#39;pandas&#39;</span><span class="p">]</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="o">.</span><span class="n">update</span><span class="p">((</span><span class="n">mod_name</span><span class="p">,</span> <span class="n">Mock</span><span class="p">())</span> <span class="k">for</span> <span class="n">mod_name</span> <span class="ow">in</span> <span class="n">MOCK_MODULES</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Of course, replacing <code class="xref py py-obj docutils literal"><span class="pre">MOCK_MODULES</span></code> with the modules that you want to mock out.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>The library <code class="docutils literal"><span class="pre">unittest.mock</span></code> was introduced on python 3.3. On earlier versions install the <code class="docutils literal"><span class="pre">mock</span></code> library
+from PyPI with (ie <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">mock</span></code>) and replace the above import:</p>
+<div class="last highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">mock</span> <span class="kn">import</span> <span class="n">Mock</span> <span class="k">as</span> <span class="n">MagicMock</span>
+</pre></div>
+</div>
+</div>
+<p>If such libraries are installed via <code class="docutils literal"><span class="pre">setup.py</span></code>, you also will need to remove all the C-dependent libraries from your <code class="docutils literal"><span class="pre">install_requires</span></code> in the RTD environment.</p>
+</div>
+<div class="section" id="client-error-401-when-building-documentation">
+<h2><code class="xref py py-obj docutils literal"><span class="pre">Client</span> <span class="pre">Error</span> <span class="pre">401</span></code> when building documentation<a class="headerlink" href="#client-error-401-when-building-documentation" title="Permalink to this headline">¶</a></h2>
+<p>If you did not install the <code class="xref py py-obj docutils literal"><span class="pre">test_data</span></code> fixture during the installation
+instructions, you will get the following error:</p>
+<div class="highlight-python"><div class="highlight"><pre>slumber.exceptions.HttpClientError: Client Error 401: http://localhost:8000/api/v1/version/
+</pre></div>
+</div>
+<p>This is because the API admin user does not exist, and so cannot authenticate.
+You can fix this by loading the test_data:</p>
+<div class="highlight-python"><div class="highlight"><pre>./manage.py loaddata test_data
+</pre></div>
+</div>
+<p>If you&#8217;d prefer not to install the test data, you&#8217;ll need to provide a database
+account for the builder to use. You can provide these credentials by editing the
+following settings:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">SLUMBER_USERNAME</span> <span class="o">=</span> <span class="s">&#39;test&#39;</span>
+<span class="n">SLUMBER_PASSWORD</span> <span class="o">=</span> <span class="s">&#39;test&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="deleting-a-stale-or-broken-build-environment">
+<h2>Deleting a stale or broken build environment<a class="headerlink" href="#deleting-a-stale-or-broken-build-environment" title="Permalink to this headline">¶</a></h2>
+<p>If you&#8217;re having trouble getting your version to build, try wiping out the existing build/environment files.  On your version list page <code class="docutils literal"><span class="pre">/projects/[project]/versions</span></code> there is a &#8220;Wipe&#8221; button that will remove all of the files associated with your documentation build, but not the documentation itself.</p>
+</div>
+<div class="section" id="how-do-i-host-multiple-projects-on-one-cname">
+<h2>How do I host multiple projects on one CNAME?<a class="headerlink" href="#how-do-i-host-multiple-projects-on-one-cname" title="Permalink to this headline">¶</a></h2>
+<p>We support the concept of Subprojects.
+If you add a subproject to a project,
+that documentation will also be served under the parent project&#8217;s subdomain.</p>
+<p>For example,
+Kombu is a subproject of celery,
+so you can access it on the <code class="xref py py-obj docutils literal"><span class="pre">celery.readthedocs.io</span></code> domain:</p>
+<p><a class="reference external" href="http://celery.readthedocs.io/projects/kombu/en/latest/">http://celery.readthedocs.io/projects/kombu/en/latest/</a></p>
+<p>This also works the same for CNAMEs:</p>
+<p><a class="reference external" href="http://docs.celeryproject.org/projects/kombu/en/latest/">http://docs.celeryproject.org/projects/kombu/en/latest/</a></p>
+<p>You can add subprojects in the Admin section for your project.</p>
+</div>
+<div class="section" id="where-do-i-need-to-put-my-docs-for-rtd-to-find-it">
+<h2>Where do I need to put my docs for RTD to find it?<a class="headerlink" href="#where-do-i-need-to-put-my-docs-for-rtd-to-find-it" title="Permalink to this headline">¶</a></h2>
+<p>Read the Docs will crawl your project looking for a <code class="docutils literal"><span class="pre">conf.py</span></code>. Where it finds the <code class="docutils literal"><span class="pre">conf.py</span></code>, it will run <code class="docutils literal"><span class="pre">sphinx-build</span></code> in that directory. So as long as you only have one set of sphinx documentation in your project, it should Just Work.</p>
+</div>
+<div class="section" id="i-want-to-use-the-blue-default-sphinx-theme">
+<h2>I want to use the Blue/Default Sphinx theme<a class="headerlink" href="#i-want-to-use-the-blue-default-sphinx-theme" title="Permalink to this headline">¶</a></h2>
+<p>We think that our theme is badass, and better than the default for many reasons. Some people don&#8217;t like change though :), so there is a hack that will let you keep using the default theme. If you set the <code class="docutils literal"><span class="pre">html_style</span></code> variable in your <code class="docutils literal"><span class="pre">conf.py</span></code>, it should default to using the default theme. The value of this doesn&#8217;t matter, and can be set to <code class="docutils literal"><span class="pre">/default.css</span></code> for default behavior.</p>
+</div>
+<div class="section" id="i-want-to-use-the-read-the-docs-theme-locally">
+<h2>I want to use the Read the Docs theme locally<a class="headerlink" href="#i-want-to-use-the-read-the-docs-theme-locally" title="Permalink to this headline">¶</a></h2>
+<p>There is a repository for that: <a class="reference external" href="https://github.com/snide/sphinx_rtd_theme">https://github.com/snide/sphinx_rtd_theme</a>.
+Simply follow the instructions in the README.</p>
+</div>
+<div class="section" id="image-scaling-doesn-t-work-in-my-documentation">
+<h2>Image scaling doesn&#8217;t work in my documentation<a class="headerlink" href="#image-scaling-doesn-t-work-in-my-documentation" title="Permalink to this headline">¶</a></h2>
+<p>Image scaling in docutils depends on PIL. PIL is installed in the system that RTD runs on. However, if you are using the virtualenv building option, you will likely need to include PIL in your requirements for your project.</p>
+</div>
+<div class="section" id="i-want-comments-in-my-docs">
+<h2>I want comments in my docs<a class="headerlink" href="#i-want-comments-in-my-docs" title="Permalink to this headline">¶</a></h2>
+<p>RTD doesn&#8217;t have explicit support for this. That said, a tool like <a class="reference external" href="http://disqus.com/">Disqus</a> can be used for this purpose on RTD.</p>
+</div>
+<div class="section" id="how-do-i-support-multiple-languages-of-documentation">
+<h2>How do I support multiple languages of documentation?<a class="headerlink" href="#how-do-i-support-multiple-languages-of-documentation" title="Permalink to this headline">¶</a></h2>
+<p>See the section on <a class="reference internal" href="localization.html#localization-of-documentation"><span>Localization of Documentation</span></a>.</p>
+</div>
+<div class="section" id="do-i-need-to-be-whitelisted">
+<h2>Do I need to be whitelisted?<a class="headerlink" href="#do-i-need-to-be-whitelisted" title="Permalink to this headline">¶</a></h2>
+<p>No. Whitelisting has been removed as a concept in Read the Docs. You should have access to all of the features already.</p>
+</div>
+<div class="section" id="does-read-the-docs-work-well-with-legible-docstrings">
+<h2>Does Read The Docs work well with &#8220;legible&#8221; docstrings?<a class="headerlink" href="#does-read-the-docs-work-well-with-legible-docstrings" title="Permalink to this headline">¶</a></h2>
+<p>Yes. One criticism of Sphinx is that its annotated docstrings are too
+dense and difficult for humans to read. In response, many projects
+have adopted customized docstring styles that are simultaneously
+informative and legible. The
+<a class="reference external" href="https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt">NumPy</a>
+and
+<a class="reference external" href="http://google-styleguide.googlecode.com/svn/trunk/pyguide.html?showone=Comments#Comments">Google</a>
+styles are two popular docstring formats.  Fortunately, the default
+Read The Docs theme handles both formats just fine, provided
+your <code class="docutils literal"><span class="pre">conf.py</span></code> specifies an appropriate Sphinx extension that
+knows how to convert your customized docstrings.  Two such extensions
+are <a class="reference external" href="https://github.com/numpy/numpydoc">numpydoc</a> and
+<a class="reference external" href="http://sphinxcontrib-napoleon.readthedocs.io">napoleon</a>. Only
+<code class="docutils literal"><span class="pre">napoleon</span></code> is able to handle both docstring formats. Its default
+output more closely matches the format of standard Sphinx annotations,
+and as a result, it tends to look a bit better with the default theme.</p>
+</div>
+<div class="section" id="can-i-document-a-python-package-that-is-not-at-the-root-of-my-repository">
+<h2>Can I document a python package that is not at the root of my repository?<a class="headerlink" href="#can-i-document-a-python-package-that-is-not-at-the-root-of-my-repository" title="Permalink to this headline">¶</a></h2>
+<p>Yes. The most convenient way to access a python package for example via
+<a class="reference external" href="http://sphinx-doc.org/ext/autodoc.html">Sphinx&#8217;s autoapi</a> in your documentation is to use the <em>Install your project
+inside a virtualenv using ``setup.py install``</em> option in the admin panel of
+your project. However this assumes that your <code class="docutils literal"><span class="pre">setup.py</span></code> is in the root of
+your repository.</p>
+<p>If you want to place your package in a different directory or have multiple
+python packages in the same project, then create a pip requirements file. You
+can specify the relative path to your package inside the file.
+For example you want to keep your python package in the <code class="docutils literal"><span class="pre">src/python</span></code>
+directory, then create a <code class="docutils literal"><span class="pre">requirements.readthedocs.txt</span></code> file with the
+following contents:</p>
+<div class="highlight-python"><div class="highlight"><pre>src/python/
+</pre></div>
+</div>
+<p>Please note that the path must be relative to the file. So the example path
+above would work if the file is in the root of your repository. If you want to
+put the requirements in a file called <code class="docutils literal"><span class="pre">requirements/readthedocs.txt</span></code>, the
+contents would look like:</p>
+<div class="highlight-python"><div class="highlight"><pre>../python/
+</pre></div>
+</div>
+<p>After adding the file to your repository, go to the <em>Advanced Settings</em> in
+your project&#8217;s admin panel and add the name of the file to the <em>Requirements
+file</em> field.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="yaml-config.html" class="btn btn-neutral float-right" title="Read the Docs YAML Config" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="support.html" class="btn btn-neutral" title="Support" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010, Eric Holscher, Charlie Leifer, Bobby Grace.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

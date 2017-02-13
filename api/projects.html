@@ -1,0 +1,1431 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>readthedocs.projects &mdash; Read The Docs 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Read The Docs 1.0 documentation" href="../index.html"/>
+        <link rel="up" title="API" href="index.html"/>
+        <link rel="next" title="readthedocs.vcs_support" href="vcs_support.html"/>
+        <link rel="prev" title="readthedocs.core" href="core.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Read The Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Read the Docs features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yaml-config.html">Read the Docs YAML Config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">Read the Docs Public API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Embed API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About Read the Docs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contribute.html">Contributing to Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../team.html">Read the Docs Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ethical-advertising.html">Ethical Advertising</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sponsors.html">Sponsors of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../open-source-philosophy.html">Read the Docs Open Source Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../story.html">The Story of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../talks.html">Talks about Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dmca/index.html">DMCA Takedown Policy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../webhooks.html">Webhooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../alternate_domains.html">Alternate Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization of Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vcs.html">VCS Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conda.html">Conda Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../single_version.html">Single Version Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../privacy.html">Privacy Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">User-defined Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automatic-redirects.html">Automatic Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../features/embed.html">Content Embedding</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="bookmarks.html"><code class="docutils literal"><span class="pre">readthedocs.bookmarks</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="builds.html"><code class="docutils literal"><span class="pre">readthedocs.builds</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="doc_builder.html"><code class="docutils literal"><span class="pre">readthedocs.doc_builder</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.html"><code class="docutils literal"><span class="pre">readthedocs.core</span></code></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">readthedocs.projects</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.projects.admin"><code class="docutils literal"><span class="pre">readthedocs.projects.admin</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.projects.constants"><code class="docutils literal"><span class="pre">readthedocs.projects.constants</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.projects.forms"><code class="docutils literal"><span class="pre">readthedocs.projects.forms</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.projects.models"><code class="docutils literal"><span class="pre">readthedocs.projects.models</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.projects.search_indexes"><code class="docutils literal"><span class="pre">readthedocs.projects.search_indexes</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.projects.tasks"><code class="docutils literal"><span class="pre">readthedocs.projects.tasks</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.projects.utils"><code class="docutils literal"><span class="pre">readthedocs.projects.utils</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#readthedocs-projects-views"><code class="docutils literal"><span class="pre">readthedocs.projects.views</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#module-readthedocs.projects.views.public"><code class="docutils literal"><span class="pre">readthedocs.projects.views.public</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-readthedocs.projects.views.private"><code class="docutils literal"><span class="pre">readthedocs.projects.views.private</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="vcs_support.html"><code class="docutils literal"><span class="pre">readthedocs.vcs_support</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tests.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs.html">Building and Contributing to Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/standards.html">Development Standards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/buildenvironments.html">Build Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../symlinks.html">How we use symlinks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings.html">Interesting Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issue-labels.html">Overview of issue labels</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Business Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../business/index.html">Read the Docs Business Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Custom Install Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../custom_installs/index.html">Info about custom installs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Designer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../design.html">Designing Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../theme.html">Read the Docs Theme</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Read The Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">API</a> &raquo;</li>
+      
+    <li><code class="docutils literal"><span class="pre">readthedocs.projects</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/api/projects.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="readthedocs-projects">
+<h1><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.projects</span></code><a class="headerlink" href="#readthedocs-projects" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-readthedocs.projects.admin">
+<span id="readthedocs-projects-admin"></span><h2><a class="reference internal" href="#module-readthedocs.projects.admin" title="readthedocs.projects.admin"><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.projects.admin</span></code></a><a class="headerlink" href="#module-readthedocs.projects.admin" title="Permalink to this headline">¶</a></h2>
+<p>Django administration interface for <code class="xref py py-obj docutils literal"><span class="pre">projects.models</span></code></p>
+<dl class="class">
+<dt id="readthedocs.projects.admin.ImportedFileAdmin">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.admin.</code><code class="descname">ImportedFileAdmin</code><span class="sig-paren">(</span><em>model</em>, <em>admin_site</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.admin.ImportedFileAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Admin view for <code class="xref py py-class docutils literal"><span class="pre">ImportedFile</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.admin.ProjectAdmin">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.admin.</code><code class="descname">ProjectAdmin</code><span class="sig-paren">(</span><em>model</em>, <em>admin_site</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.admin.ProjectAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project model admin view</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.admin.ProjectRelationshipInline">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.admin.</code><code class="descname">ProjectRelationshipInline</code><span class="sig-paren">(</span><em>parent_model</em>, <em>admin_site</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.admin.ProjectRelationshipInline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project inline relationship view for <a class="reference internal" href="#readthedocs.projects.admin.ProjectAdmin" title="readthedocs.projects.admin.ProjectAdmin"><code class="xref py py-class docutils literal"><span class="pre">ProjectAdmin</span></code></a></p>
+<dl class="attribute">
+<dt id="readthedocs.projects.admin.ProjectRelationshipInline.model">
+<code class="descname">model</code><a class="headerlink" href="#readthedocs.projects.admin.ProjectRelationshipInline.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal"><span class="pre">ProjectRelationship</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.admin.RedirectInline">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.admin.</code><code class="descname">RedirectInline</code><span class="sig-paren">(</span><em>parent_model</em>, <em>admin_site</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.admin.RedirectInline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Redirect inline relationship view for <a class="reference internal" href="#readthedocs.projects.admin.ProjectAdmin" title="readthedocs.projects.admin.ProjectAdmin"><code class="xref py py-class docutils literal"><span class="pre">ProjectAdmin</span></code></a></p>
+<dl class="attribute">
+<dt id="readthedocs.projects.admin.RedirectInline.model">
+<code class="descname">model</code><a class="headerlink" href="#readthedocs.projects.admin.RedirectInline.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal"><span class="pre">Redirect</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.admin.VersionInline">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.admin.</code><code class="descname">VersionInline</code><span class="sig-paren">(</span><em>parent_model</em>, <em>admin_site</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.admin.VersionInline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Version inline relationship view for <a class="reference internal" href="#readthedocs.projects.admin.ProjectAdmin" title="readthedocs.projects.admin.ProjectAdmin"><code class="xref py py-class docutils literal"><span class="pre">ProjectAdmin</span></code></a></p>
+<dl class="attribute">
+<dt id="readthedocs.projects.admin.VersionInline.model">
+<code class="descname">model</code><a class="headerlink" href="#readthedocs.projects.admin.VersionInline.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal"><span class="pre">Version</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-readthedocs.projects.constants">
+<span id="readthedocs-projects-constants"></span><h2><a class="reference internal" href="#module-readthedocs.projects.constants" title="readthedocs.projects.constants"><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.projects.constants</span></code></a><a class="headerlink" href="#module-readthedocs.projects.constants" title="Permalink to this headline">¶</a></h2>
+<p>Project constants</p>
+<p>Default values and other various configuration for projects, including available
+theme names and repository types.</p>
+</div>
+<div class="section" id="module-readthedocs.projects.forms">
+<span id="readthedocs-projects-forms"></span><h2><a class="reference internal" href="#module-readthedocs.projects.forms" title="readthedocs.projects.forms"><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.projects.forms</span></code></a><a class="headerlink" href="#module-readthedocs.projects.forms" title="Permalink to this headline">¶</a></h2>
+<p>Project forms</p>
+<dl class="class">
+<dt id="readthedocs.projects.forms.BaseVersionsForm">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.forms.</code><code class="descname">BaseVersionsForm</code><span class="sig-paren">(</span><em>data=None</em>, <em>files=None</em>, <em>auto_id=u'id_%s'</em>, <em>prefix=None</em>, <em>initial=None</em>, <em>error_class=&lt;class 'django.forms.utils.ErrorList'&gt;</em>, <em>label_suffix=None</em>, <em>empty_permitted=False</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.BaseVersionsForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Form for versions page</p>
+<dl class="method">
+<dt id="readthedocs.projects.forms.BaseVersionsForm.save_version">
+<code class="descname">save_version</code><span class="sig-paren">(</span><em>version</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.BaseVersionsForm.save_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save version if there has been a change, trigger a rebuild</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.forms.DualCheckboxWidget">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.forms.</code><code class="descname">DualCheckboxWidget</code><span class="sig-paren">(</span><em>version</em>, <em>attrs=None</em>, <em>check_test=&lt;type 'bool'&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.DualCheckboxWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checkbox with link to the version&#8217;s built documentation</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.forms.EmailHookForm">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.forms.</code><code class="descname">EmailHookForm</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.EmailHookForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project email notification form</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.forms.ProjectAdvancedForm">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.forms.</code><code class="descname">ProjectAdvancedForm</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.ProjectAdvancedForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Advanced project option form</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.forms.ProjectAdvertisingForm">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.forms.</code><code class="descname">ProjectAdvertisingForm</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.ProjectAdvertisingForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project promotion opt-out form</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.forms.ProjectBackendForm">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.forms.</code><code class="descname">ProjectBackendForm</code><span class="sig-paren">(</span><em>data=None</em>, <em>files=None</em>, <em>auto_id=u'id_%s'</em>, <em>prefix=None</em>, <em>initial=None</em>, <em>error_class=&lt;class 'django.forms.utils.ErrorList'&gt;</em>, <em>label_suffix=None</em>, <em>empty_permitted=False</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.ProjectBackendForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the import backend</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.forms.ProjectBasicsForm">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.forms.</code><code class="descname">ProjectBasicsForm</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.ProjectBasicsForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Form for basic project fields</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.forms.ProjectExtraForm">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.forms.</code><code class="descname">ProjectExtraForm</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.ProjectExtraForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Additional project information form</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.forms.ProjectForm">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.forms.</code><code class="descname">ProjectForm</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.ProjectForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project form</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user</strong> &#8211; If provided, add this user as a project user on save</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.forms.ProjectTriggerBuildMixin">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.forms.</code><code class="descname">ProjectTriggerBuildMixin</code><a class="headerlink" href="#readthedocs.projects.forms.ProjectTriggerBuildMixin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mixin to trigger build on form save</p>
+<p>This should be replaced with signals instead of calling trigger_build
+explicitly.</p>
+<dl class="method">
+<dt id="readthedocs.projects.forms.ProjectTriggerBuildMixin.save">
+<code class="descname">save</code><span class="sig-paren">(</span><em>commit=True</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.ProjectTriggerBuildMixin.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trigger build on commit save</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.forms.RedirectForm">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.forms.</code><code class="descname">RedirectForm</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.RedirectForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Form for project redirects</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.forms.SubprojectForm">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.forms.</code><code class="descname">SubprojectForm</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.SubprojectForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project subproject form</p>
+<dl class="method">
+<dt id="readthedocs.projects.forms.SubprojectForm.clean_subproject">
+<code class="descname">clean_subproject</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.SubprojectForm.clean_subproject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normalize subproject field</p>
+<p>Does lookup on against <code class="xref py py-class docutils literal"><span class="pre">Project</span></code> to ensure matching project
+exists. Return the <code class="xref py py-class docutils literal"><span class="pre">Project</span></code> object instead.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.forms.TranslationForm">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.forms.</code><code class="descname">TranslationForm</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.TranslationForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project translation form</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.forms.UserForm">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.forms.</code><code class="descname">UserForm</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.UserForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project user association form</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.forms.WebHookForm">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.forms.</code><code class="descname">WebHookForm</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.WebHookForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project webhook form</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.forms.build_upload_html_form">
+<code class="descclassname">readthedocs.projects.forms.</code><code class="descname">build_upload_html_form</code><span class="sig-paren">(</span><em>project</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.build_upload_html_form" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upload HTML form with list of versions to upload HTML for</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.forms.build_versions_form">
+<code class="descclassname">readthedocs.projects.forms.</code><code class="descname">build_versions_form</code><span class="sig-paren">(</span><em>project</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.forms.build_versions_form" title="Permalink to this definition">¶</a></dt>
+<dd><p>Versions form with a list of versions and version privacy levels</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-readthedocs.projects.models">
+<span id="readthedocs-projects-models"></span><h2><a class="reference internal" href="#module-readthedocs.projects.models" title="readthedocs.projects.models"><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.projects.models</span></code></a><a class="headerlink" href="#module-readthedocs.projects.models" title="Permalink to this headline">¶</a></h2>
+<p>Project models</p>
+<dl class="class">
+<dt id="readthedocs.projects.models.Domain">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.models.</code><code class="descname">Domain</code><span class="sig-paren">(</span><em>id</em>, <em>project</em>, <em>domain</em>, <em>machine</em>, <em>cname</em>, <em>canonical</em>, <em>https</em>, <em>count</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Domain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.models.EmailHook">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.models.</code><code class="descname">EmailHook</code><span class="sig-paren">(</span><em>id</em>, <em>project</em>, <em>email</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.EmailHook" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.models.ImportedFile">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.models.</code><code class="descname">ImportedFile</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.ImportedFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Imported files model</p>
+<p>This tracks files that are output from documentation builds, useful for
+things like CDN invalidation.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.models.Project">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.models.</code><code class="descname">Project</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project model</p>
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.add_comment">
+<code class="descname">add_comment</code><span class="sig-paren">(</span><em>version_slug</em>, <em>page</em>, <em>content_hash</em>, <em>commit</em>, <em>user</em>, <em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.add_comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add comment to node</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>version_slug</strong> &#8211; Version slug to use for node lookup</li>
+<li><strong>page</strong> &#8211; Page to attach comment to</li>
+<li><strong>content_hash</strong> &#8211; Hash of content to apply comment to</li>
+<li><strong>commit</strong> &#8211; Commit that updated comment</li>
+<li><strong>user</strong> &#8211; <code class="xref py py-class docutils literal"><span class="pre">User</span></code> instance that created comment</li>
+<li><strong>text</strong> &#8211; Comment text</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.add_node">
+<code class="descname">add_node</code><span class="sig-paren">(</span><em>content_hash</em>, <em>page</em>, <em>version</em>, <em>commit</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.add_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add comment node</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>content_hash</strong> &#8211; Hash of node content</li>
+<li><strong>page</strong> &#8211; Doc page for node</li>
+<li><strong>version</strong> (<a class="reference external" href="http://python.readthedocs.io/en/latest/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) &#8211; Slug for project version to apply node to</li>
+<li><strong>commit</strong> (<a class="reference external" href="http://python.readthedocs.io/en/latest/library/stdtypes.html#str" title="(in Python v3.6)"><em>str</em></a>) &#8211; Commit that node was updated in</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.all_active_versions">
+<code class="descname">all_active_versions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.all_active_versions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get queryset with all active versions</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is a temporary workaround for activate_versions filtering out
+things that were active, but failed to build</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">Version</span></code> queryset</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.artifact_path">
+<code class="descname">artifact_path</code><span class="sig-paren">(</span><em>type_</em>, <em>version='latest'</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.artifact_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The path to the build html docs in the project</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.conf_file">
+<code class="descname">conf_file</code><span class="sig-paren">(</span><em>version='latest'</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.conf_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find a <code class="docutils literal"><span class="pre">conf.py</span></code> file in the project checkout</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.find">
+<code class="descname">find</code><span class="sig-paren">(</span><em>filename</em>, <em>version</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.find" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find files inside the project&#8217;s <code class="docutils literal"><span class="pre">doc</span></code> path</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>filename</strong> &#8211; Filename to search for in project checkout</li>
+<li><strong>version</strong> &#8211; Version instance to set version checkout path</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.full_build_path">
+<code class="descname">full_build_path</code><span class="sig-paren">(</span><em>version='latest'</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.full_build_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The path to the build html docs in the project</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.full_dash_path">
+<code class="descname">full_dash_path</code><span class="sig-paren">(</span><em>version='latest'</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.full_dash_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The path to the build dash docs in the project</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.full_doc_path">
+<code class="descname">full_doc_path</code><span class="sig-paren">(</span><em>version='latest'</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.full_doc_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The path to the documentation root in the project</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.full_epub_path">
+<code class="descname">full_epub_path</code><span class="sig-paren">(</span><em>version='latest'</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.full_epub_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The path to the build epub docs in the project</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.full_find">
+<code class="descname">full_find</code><span class="sig-paren">(</span><em>filename</em>, <em>version</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.full_find" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find files inside a project&#8217;s checkout path</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>filename</strong> &#8211; Filename to search for in project checkout</li>
+<li><strong>version</strong> &#8211; Version instance to set version checkout path</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.full_json_path">
+<code class="descname">full_json_path</code><span class="sig-paren">(</span><em>version='latest'</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.full_json_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The path to the build json docs in the project</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.full_latex_path">
+<code class="descname">full_latex_path</code><span class="sig-paren">(</span><em>version='latest'</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.full_latex_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The path to the build LaTeX docs in the project</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.full_man_path">
+<code class="descname">full_man_path</code><span class="sig-paren">(</span><em>version='latest'</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.full_man_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The path to the build man docs in the project</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.full_singlehtml_path">
+<code class="descname">full_singlehtml_path</code><span class="sig-paren">(</span><em>version='latest'</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.full_singlehtml_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The path to the build singlehtml docs in the project</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.get_default_branch">
+<code class="descname">get_default_branch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.get_default_branch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the version representing &#8216;latest&#8217;</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.get_default_version">
+<code class="descname">get_default_version</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.get_default_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the default version (slug).</p>
+<p>Returns self.default_version if the version with that slug actually
+exists (is built and published). Otherwise returns &#8216;latest&#8217;.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.get_docs_url">
+<code class="descname">get_docs_url</code><span class="sig-paren">(</span><em>version_slug=None</em>, <em>lang_slug=None</em>, <em>private=None</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.get_docs_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a url for the docs</p>
+<p>Always use http for now, to avoid content warnings.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.get_latest_build">
+<code class="descname">get_latest_build</code><span class="sig-paren">(</span><em>finished=True</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.get_latest_build" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get latest build for project</p>
+<dl class="docutils">
+<dt>finished</dt>
+<dd>Return only builds that are in a finished state</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.get_production_media_path">
+<code class="descname">get_production_media_path</code><span class="sig-paren">(</span><em>type_</em>, <em>version_slug</em>, <em>include_file=True</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.get_production_media_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is used to see if these files exist so we can offer them for download.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type</strong> &#8211; Media content type, ie - &#8216;pdf&#8217;, &#8216;zip&#8217;</li>
+<li><strong>version_slug</strong> &#8211; Project version slug for lookup</li>
+<li><strong>include_file</strong> (<a class="reference external" href="http://python.readthedocs.io/en/latest/library/functions.html#bool" title="(in Python v3.6)"><em>bool</em></a>) &#8211; Include file name in return</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Full path to media file or path</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.get_production_media_url">
+<code class="descname">get_production_media_url</code><span class="sig-paren">(</span><em>type_</em>, <em>version_slug</em>, <em>full_path=True</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.get_production_media_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the URL for downloading a specific media file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.get_subproject_urls">
+<code class="descname">get_subproject_urls</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.get_subproject_urls" title="Permalink to this definition">¶</a></dt>
+<dd><p>List subproject URLs</p>
+<p>This is used in search result linking</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="readthedocs.projects.models.Project.is_type_mkdocs">
+<code class="descname">is_type_mkdocs</code><a class="headerlink" href="#readthedocs.projects.models.Project.is_type_mkdocs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is project type Mkdocs</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="readthedocs.projects.models.Project.is_type_sphinx">
+<code class="descname">is_type_sphinx</code><a class="headerlink" href="#readthedocs.projects.models.Project.is_type_sphinx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is project type Sphinx</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="readthedocs.projects.models.Project.pip_cache_path">
+<code class="descname">pip_cache_path</code><a class="headerlink" href="#readthedocs.projects.models.Project.pip_cache_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path to pip cache</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.rtd_build_path">
+<code class="descname">rtd_build_path</code><span class="sig-paren">(</span><em>version='latest'</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.rtd_build_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The destination path where the built docs are copied</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.static_metadata_path">
+<code class="descname">static_metadata_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.static_metadata_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The path to the static metadata JSON settings file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.subdomain">
+<code class="descname">subdomain</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.subdomain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get project subdomain from resolver</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.supported_versions">
+<code class="descname">supported_versions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.supported_versions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the list of supported versions</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of version strings.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.translations_symlink_path">
+<code class="descname">translations_symlink_path</code><span class="sig-paren">(</span><em>language=None</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.translations_symlink_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path in the doc_path that we symlink translations</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.models.Project.update_stable_version">
+<code class="descname">update_stable_version</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.Project.update_stable_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the version that was promoted to be the new stable version</p>
+<p>Return <code class="docutils literal"><span class="pre">None</span></code> if no update was mode or if there is no version on the
+project that can be considered stable.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.models.ProjectRelationship">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.models.</code><code class="descname">ProjectRelationship</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.ProjectRelationship" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project to project relationship</p>
+<p>This is used for subprojects</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.models.WebHook">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.models.</code><code class="descname">WebHook</code><span class="sig-paren">(</span><em>id</em>, <em>project</em>, <em>url</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.models.WebHook" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-readthedocs.projects.search_indexes">
+<span id="readthedocs-projects-search-indexes"></span><h2><a class="reference internal" href="#module-readthedocs.projects.search_indexes" title="readthedocs.projects.search_indexes"><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.projects.search_indexes</span></code></a><a class="headerlink" href="#module-readthedocs.projects.search_indexes" title="Permalink to this headline">¶</a></h2>
+<p>Project search indexes</p>
+<div class="deprecated">
+<p><span class="versionmodified">Deprecated since version Read: </span>the Docs no longer uses Haystack in production and the core team does
+not maintain this code. Use at your own risk, this may go away soon.</p>
+</div>
+<dl class="class">
+<dt id="readthedocs.projects.search_indexes.ImportedFileIndex">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.search_indexes.</code><code class="descname">ImportedFileIndex</code><a class="headerlink" href="#readthedocs.projects.search_indexes.ImportedFileIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search index for imported files</p>
+<dl class="method">
+<dt id="readthedocs.projects.search_indexes.ImportedFileIndex.index_queryset">
+<code class="descname">index_queryset</code><span class="sig-paren">(</span><em>using=None</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.search_indexes.ImportedFileIndex.index_queryset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used when the entire index for model is updated</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.search_indexes.ImportedFileIndex.prepare_text">
+<code class="descname">prepare_text</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.search_indexes.ImportedFileIndex.prepare_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prepare the text of the html file</p>
+<p>This only works on machines that have the html files for the projects
+checked out.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.search_indexes.ProjectIndex">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.search_indexes.</code><code class="descname">ProjectIndex</code><a class="headerlink" href="#readthedocs.projects.search_indexes.ProjectIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project search index</p>
+<dl class="method">
+<dt id="readthedocs.projects.search_indexes.ProjectIndex.index_queryset">
+<code class="descname">index_queryset</code><span class="sig-paren">(</span><em>using=None</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.search_indexes.ProjectIndex.index_queryset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used when the entire index for model is updated</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-readthedocs.projects.tasks">
+<span id="readthedocs-projects-tasks"></span><h2><a class="reference internal" href="#module-readthedocs.projects.tasks" title="readthedocs.projects.tasks"><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.projects.tasks</span></code></a><a class="headerlink" href="#module-readthedocs.projects.tasks" title="Permalink to this headline">¶</a></h2>
+<p>Tasks related to projects</p>
+<p>This includes fetching repository code, cleaning <code class="docutils literal"><span class="pre">conf.py</span></code> files, and
+rebuilding documentation.</p>
+<dl class="class">
+<dt id="readthedocs.projects.tasks.UpdateDocsTask">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.tasks.</code><code class="descname">UpdateDocsTask</code><span class="sig-paren">(</span><em>build_env=None</em>, <em>python_env=None</em>, <em>config=None</em>, <em>force=False</em>, <em>search=True</em>, <em>localmedia=True</em>, <em>build=None</em>, <em>project=None</em>, <em>version=None</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.UpdateDocsTask" title="Permalink to this definition">¶</a></dt>
+<dd><p>The main entry point for updating documentation.</p>
+<p>It handles all of the logic around whether a project is imported or we
+created it.  Then it will build the html docs and other requested parts.</p>
+<dl class="docutils">
+<dt><code class="xref py py-obj docutils literal"><span class="pre">pk</span></code></dt>
+<dd>Primary key of the project to update</dd>
+<dt><code class="xref py py-obj docutils literal"><span class="pre">record</span></code></dt>
+<dd>Whether or not to keep a record of the update in the database. Useful
+for preventing changes visible to the end-user when running commands
+from the shell, for example.</dd>
+</dl>
+<dl class="method">
+<dt id="readthedocs.projects.tasks.UpdateDocsTask.build_docs">
+<code class="descname">build_docs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.UpdateDocsTask.build_docs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrapper to all build functions</p>
+<p>Executes the necessary builds for this task and returns whether the
+build was successful or not.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Build outcomes with keys for html, search, localmedia, pdf,
+and epub</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="http://python.readthedocs.io/en/latest/library/stdtypes.html#dict" title="(in Python v3.6)">dict</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.tasks.UpdateDocsTask.build_docs_class">
+<code class="descname">build_docs_class</code><span class="sig-paren">(</span><em>builder_class</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.UpdateDocsTask.build_docs_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build docs with additional doc backends</p>
+<p>These steps are not necessarily required for the build to halt, so we
+only raise a warning exception here. A hard error will halt the build
+process.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.tasks.UpdateDocsTask.build_docs_epub">
+<code class="descname">build_docs_epub</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.UpdateDocsTask.build_docs_epub" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build ePub docs</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.tasks.UpdateDocsTask.build_docs_html">
+<code class="descname">build_docs_html</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.UpdateDocsTask.build_docs_html" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build HTML docs</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.tasks.UpdateDocsTask.build_docs_localmedia">
+<code class="descname">build_docs_localmedia</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.UpdateDocsTask.build_docs_localmedia" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get local media files with separate build</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.tasks.UpdateDocsTask.build_docs_pdf">
+<code class="descname">build_docs_pdf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.UpdateDocsTask.build_docs_pdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build PDF docs</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.tasks.UpdateDocsTask.build_docs_search">
+<code class="descname">build_docs_search</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.UpdateDocsTask.build_docs_search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build search data with separate build</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="readthedocs.projects.tasks.UpdateDocsTask.get_build">
+<em class="property">static </em><code class="descname">get_build</code><span class="sig-paren">(</span><em>build_pk</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.UpdateDocsTask.get_build" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve build object from API</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>build_pk</strong> &#8211; Build primary key</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.tasks.UpdateDocsTask.get_env_vars">
+<code class="descname">get_env_vars</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.UpdateDocsTask.get_env_vars" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get bash environment variables used for all builder commands.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="readthedocs.projects.tasks.UpdateDocsTask.get_project">
+<em class="property">static </em><code class="descname">get_project</code><span class="sig-paren">(</span><em>project_pk</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.UpdateDocsTask.get_project" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get project from API</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="readthedocs.projects.tasks.UpdateDocsTask.get_version">
+<em class="property">static </em><code class="descname">get_version</code><span class="sig-paren">(</span><em>project</em>, <em>version_pk</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.UpdateDocsTask.get_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ensure we&#8217;re using a sane version</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.tasks.UpdateDocsTask.send_notifications">
+<code class="descname">send_notifications</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.UpdateDocsTask.send_notifications" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send notifications on build failure</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.tasks.UpdateDocsTask.set_valid_clone">
+<code class="descname">set_valid_clone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.UpdateDocsTask.set_valid_clone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mark on the project that it has been cloned properly.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.tasks.UpdateDocsTask.setup_environment">
+<code class="descname">setup_environment</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.UpdateDocsTask.setup_environment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build the virtualenv and install the project into it.</p>
+<p>Always build projects with a virtualenv.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>build_env</strong> &#8211; Build environment to pass commands and execution through.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.tasks.UpdateDocsTask.setup_vcs">
+<code class="descname">setup_vcs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.UpdateDocsTask.setup_vcs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update the checkout of the repo to make sure it&#8217;s the latest.</p>
+<p>This also syncs versions in the DB.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>build_env</strong> &#8211; Build environment</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.tasks.UpdateDocsTask.update_documentation_type">
+<code class="descname">update_documentation_type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.UpdateDocsTask.update_documentation_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Force Sphinx for &#8216;auto&#8217; documentation type</p>
+<p>This used to determine the type and automatically set the documentation
+type to Sphinx for rST and Mkdocs for markdown. It now just forces
+Sphinx, due to markdown support.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.tasks.email_notification">
+<code class="descclassname">readthedocs.projects.tasks.</code><code class="descname">email_notification</code><span class="sig-paren">(</span><em>version</em>, <em>build</em>, <em>email</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.email_notification" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send email notifications for build failure</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>version</strong> &#8211; <code class="xref py py-class docutils literal"><span class="pre">Version</span></code> instance that failed</li>
+<li><strong>build</strong> &#8211; <code class="xref py py-class docutils literal"><span class="pre">Build</span></code> instance that failed</li>
+<li><strong>email</strong> &#8211; Email recipient address</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.tasks.webhook_notification">
+<code class="descclassname">readthedocs.projects.tasks.</code><code class="descname">webhook_notification</code><span class="sig-paren">(</span><em>version</em>, <em>build</em>, <em>hook_url</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.tasks.webhook_notification" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send webhook notification for project webhook</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>version</strong> &#8211; Version instance to send hook for</li>
+<li><strong>build</strong> &#8211; Build instance that failed</li>
+<li><strong>hook_url</strong> &#8211; Hook URL to send to</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-readthedocs.projects.utils">
+<span id="readthedocs-projects-utils"></span><h2><a class="reference internal" href="#module-readthedocs.projects.utils" title="readthedocs.projects.utils"><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.projects.utils</span></code></a><a class="headerlink" href="#module-readthedocs.projects.utils" title="Permalink to this headline">¶</a></h2>
+<p>Utility functions used by projects</p>
+<dl class="function">
+<dt id="readthedocs.projects.utils.find_file">
+<code class="descclassname">readthedocs.projects.utils.</code><code class="descname">find_file</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.utils.find_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recursively find matching file from the current working path</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file</strong> &#8211; Filename to match</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A list of matching filenames.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.utils.make_api_project">
+<code class="descclassname">readthedocs.projects.utils.</code><code class="descname">make_api_project</code><span class="sig-paren">(</span><em>project_data</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.utils.make_api_project" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make mock Project instance from API return</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.utils.make_api_version">
+<code class="descclassname">readthedocs.projects.utils.</code><code class="descname">make_api_version</code><span class="sig-paren">(</span><em>version_data</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.utils.make_api_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make mock Version instance from API return</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.utils.run">
+<code class="descclassname">readthedocs.projects.utils.</code><code class="descname">run</code><span class="sig-paren">(</span><em>*commands</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.utils.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run one or more commands</p>
+<p>If more than one command is given, then this is equivalent to
+chaining them together with <code class="docutils literal"><span class="pre">&amp;&amp;</span></code>; if all commands succeed, then
+<code class="docutils literal"><span class="pre">(status,</span> <span class="pre">out,</span> <span class="pre">err)</span></code> will represent the last successful command.
+If one command failed, then <code class="docutils literal"><span class="pre">(status,</span> <span class="pre">out,</span> <span class="pre">err)</span></code> will represent
+the failed command.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><code class="docutils literal"><span class="pre">(status,</span> <span class="pre">out,</span> <span class="pre">err)</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.utils.safe_write">
+<code class="descclassname">readthedocs.projects.utils.</code><code class="descname">safe_write</code><span class="sig-paren">(</span><em>filename</em>, <em>contents</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.utils.safe_write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normalize and write to filename</p>
+<p>Write <code class="docutils literal"><span class="pre">contents</span></code> to the given <code class="docutils literal"><span class="pre">filename</span></code>. If the filename&#8217;s
+directory does not exist, it is created. Contents are written as UTF-8,
+ignoring any characters that cannot be encoded as UTF-8.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>filename</strong> &#8211; Filename to write to</li>
+<li><strong>contents</strong> &#8211; File contents to write to file</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.utils.update_static_metadata">
+<code class="descclassname">readthedocs.projects.utils.</code><code class="descname">update_static_metadata</code><span class="sig-paren">(</span><em>project_pk</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.utils.update_static_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is here to avoid circular imports in models.py</p>
+</dd></dl>
+
+</div>
+<div class="section" id="readthedocs-projects-views">
+<h2><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.projects.views</span></code><a class="headerlink" href="#readthedocs-projects-views" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-readthedocs.projects.views.public">
+<span id="readthedocs-projects-views-public"></span><h3><a class="reference internal" href="#module-readthedocs.projects.views.public" title="readthedocs.projects.views.public"><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.projects.views.public</span></code></a><a class="headerlink" href="#module-readthedocs.projects.views.public" title="Permalink to this headline">¶</a></h3>
+<p>Public project views</p>
+<dl class="class">
+<dt id="readthedocs.projects.views.public.ProjectDetailView">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.views.public.</code><code class="descname">ProjectDetailView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.public.ProjectDetailView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display project onboard steps</p>
+<dl class="attribute">
+<dt id="readthedocs.projects.views.public.ProjectDetailView.model">
+<code class="descname">model</code><a class="headerlink" href="#readthedocs.projects.views.public.ProjectDetailView.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal"><span class="pre">Project</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.views.public.ProjectIndex">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.views.public.</code><code class="descname">ProjectIndex</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.public.ProjectIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>List view of public <code class="xref py py-class docutils literal"><span class="pre">Project</span></code> instances</p>
+<dl class="attribute">
+<dt id="readthedocs.projects.views.public.ProjectIndex.model">
+<code class="descname">model</code><a class="headerlink" href="#readthedocs.projects.views.public.ProjectIndex.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal"><span class="pre">Project</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.public.elastic_project_search">
+<code class="descclassname">readthedocs.projects.views.public.</code><code class="descname">elastic_project_search</code><span class="sig-paren">(</span><em>request</em>, <em>project_slug</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.public.elastic_project_search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use elastic search to search in a project</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.public.file_autocomplete">
+<code class="descclassname">readthedocs.projects.views.public.</code><code class="descname">file_autocomplete</code><span class="sig-paren">(</span><em>request</em>, <em>project_slug</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.public.file_autocomplete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a json list of file names</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.public.project_analytics">
+<code class="descclassname">readthedocs.projects.views.public.</code><code class="descname">project_analytics</code><span class="sig-paren">(</span><em>request</em>, <em>project_slug</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.public.project_analytics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Have a analytics API placeholder</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.public.project_badge">
+<code class="descclassname">readthedocs.projects.views.public.</code><code class="descname">project_badge</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.public.project_badge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a sweet badge for the project</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.public.project_download_media">
+<code class="descclassname">readthedocs.projects.views.public.</code><code class="descname">project_download_media</code><span class="sig-paren">(</span><em>request</em>, <em>project_slug</em>, <em>type_</em>, <em>version_slug</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.public.project_download_media" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download a specific piece of media.</p>
+<p>Perform an auth check if serving in private mode.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This is linked directly from the HTML pages.
+It should only care about the Version permissions,
+not the actual Project permissions.</p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.public.project_downloads">
+<code class="descclassname">readthedocs.projects.views.public.</code><code class="descname">project_downloads</code><span class="sig-paren">(</span><em>request</em>, <em>project_slug</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.public.project_downloads" title="Permalink to this definition">¶</a></dt>
+<dd><p>A detail view for a project with various dataz</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.public.project_embed">
+<code class="descclassname">readthedocs.projects.views.public.</code><code class="descname">project_embed</code><span class="sig-paren">(</span><em>request</em>, <em>project_slug</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.public.project_embed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Have a content API placeholder</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.public.project_index">
+<code class="descclassname">readthedocs.projects.views.public.</code><code class="descname">project_index</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.public.project_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>List view of public <code class="xref py py-class docutils literal"><span class="pre">Project</span></code> instances</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.public.project_versions">
+<code class="descclassname">readthedocs.projects.views.public.</code><code class="descname">project_versions</code><span class="sig-paren">(</span><em>request</em>, <em>project_slug</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.public.project_versions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project version list view</p>
+<p>Shows the available versions and lets the user choose which ones to build.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.public.search_autocomplete">
+<code class="descclassname">readthedocs.projects.views.public.</code><code class="descname">search_autocomplete</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.public.search_autocomplete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a json list of project names</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.public.version_autocomplete">
+<code class="descclassname">readthedocs.projects.views.public.</code><code class="descname">version_autocomplete</code><span class="sig-paren">(</span><em>request</em>, <em>project_slug</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.public.version_autocomplete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a json list of version names</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-readthedocs.projects.views.private">
+<span id="readthedocs-projects-views-private"></span><h3><a class="reference internal" href="#module-readthedocs.projects.views.private" title="readthedocs.projects.views.private"><code class="xref py py-mod docutils literal"><span class="pre">readthedocs.projects.views.private</span></code></a><a class="headerlink" href="#module-readthedocs.projects.views.private" title="Permalink to this headline">¶</a></h3>
+<p>Project views for authenticated users</p>
+<dl class="class">
+<dt id="readthedocs.projects.views.private.ImportDemoView">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">ImportDemoView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.ImportDemoView" title="Permalink to this definition">¶</a></dt>
+<dd><p>View to pass request on to import form to import demo project</p>
+<dl class="attribute">
+<dt id="readthedocs.projects.views.private.ImportDemoView.form_class">
+<code class="descname">form_class</code><a class="headerlink" href="#readthedocs.projects.views.private.ImportDemoView.form_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal"><span class="pre">ProjectBasicsForm</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.views.private.ImportDemoView.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.ImportDemoView.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process link request as a form post to the project import form</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.views.private.ImportDemoView.get_form_data">
+<code class="descname">get_form_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.ImportDemoView.get_form_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get form data to post to import form</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.views.private.ImportDemoView.get_form_kwargs">
+<code class="descname">get_form_kwargs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.ImportDemoView.get_form_kwargs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Form kwargs passed in during instantiation</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.views.private.ImportView">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">ImportView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.ImportView" title="Permalink to this definition">¶</a></dt>
+<dd><p>On GET, show the source an import view, on POST, mock out a wizard</p>
+<p>If we are accepting POST data, use the fields to seed the initial data in
+<a class="reference internal" href="#readthedocs.projects.views.private.ImportWizardView" title="readthedocs.projects.views.private.ImportWizardView"><code class="xref py py-class docutils literal"><span class="pre">ImportWizardView</span></code></a>.  The import templates will redirect the form to
+<code class="xref py py-obj docutils literal"><span class="pre">/dashboard/import</span></code></p>
+<dl class="method">
+<dt id="readthedocs.projects.views.private.ImportView.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.ImportView.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display list of repositories to import</p>
+<p>Adds a warning to the listing if any of the accounts connected for the
+user are not supported accounts.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="readthedocs.projects.views.private.ImportView.wizard_class">
+<code class="descname">wizard_class</code><a class="headerlink" href="#readthedocs.projects.views.private.ImportView.wizard_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#readthedocs.projects.views.private.ImportWizardView" title="readthedocs.projects.views.private.ImportWizardView"><code class="xref py py-class docutils literal"><span class="pre">ImportWizardView</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.views.private.ImportWizardView">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">ImportWizardView</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.ImportWizardView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project import wizard</p>
+<dl class="method">
+<dt id="readthedocs.projects.views.private.ImportWizardView.done">
+<code class="descname">done</code><span class="sig-paren">(</span><em>form_list</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.ImportWizardView.done" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save form data as object instance</p>
+<p>Don&#8217;t save form data directly, instead bypass documentation building and
+other side effects for now, by signalling a save without commit. Then,
+finish by added the members to the project and saving.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.views.private.ImportWizardView.get_form_kwargs">
+<code class="descname">get_form_kwargs</code><span class="sig-paren">(</span><em>step=None</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.ImportWizardView.get_form_kwargs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get args to pass into form instantiation</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.views.private.ImportWizardView.get_template_names">
+<code class="descname">get_template_names</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.ImportWizardView.get_template_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return template names based on step name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.projects.views.private.ImportWizardView.is_advanced">
+<code class="descname">is_advanced</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.ImportWizardView.is_advanced" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine if the user selected the <code class="xref py py-obj docutils literal"><span class="pre">show</span> <span class="pre">advanced</span></code> field</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.projects.views.private.ProjectDashboard">
+<em class="property">class </em><code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">ProjectDashboard</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.ProjectDashboard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project dashboard</p>
+<dl class="attribute">
+<dt id="readthedocs.projects.views.private.ProjectDashboard.model">
+<code class="descname">model</code><a class="headerlink" href="#readthedocs.projects.views.private.ProjectDashboard.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal"><span class="pre">Project</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.private.edit_alias">
+<code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">edit_alias</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.edit_alias" title="Permalink to this definition">¶</a></dt>
+<dd><p>Edit project alias form view</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.private.project_delete">
+<code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">project_delete</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.project_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project delete confirmation view</p>
+<p>Make a project as deleted on POST, otherwise show a form asking for
+confirmation of delete.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.private.project_manage">
+<code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">project_manage</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.project_manage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project management view</p>
+<p>Where you will have links to edit the projects&#8217; configuration, edit the
+files associated with that project, etc.</p>
+<p>Now redirects to the normal /projects/&lt;slug&gt; view.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.private.project_notifications">
+<code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">project_notifications</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.project_notifications" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project notification view and form view</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.private.project_notifications_delete">
+<code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">project_notifications_delete</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.project_notifications_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project notifications delete confirmation view</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.private.project_redirects">
+<code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">project_redirects</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.project_redirects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project redirects view and form view</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.private.project_redirects_delete">
+<code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">project_redirects_delete</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.project_redirects_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project redirect delete view</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.private.project_resync_webhook">
+<code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">project_resync_webhook</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.project_resync_webhook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resync a project webhook.</p>
+<p>The signal will add a success/failure message on the request.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.private.project_subprojects">
+<code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">project_subprojects</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.project_subprojects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project subprojects view and form view</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.private.project_translations">
+<code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">project_translations</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.project_translations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project translations view and form view</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.private.project_users">
+<code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">project_users</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.project_users" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project users view and form view</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.private.project_version_delete_html">
+<code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">project_version_delete_html</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.project_version_delete_html" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project version &#8216;delete&#8217; HTML</p>
+<p>This marks a version as not built</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.private.project_version_detail">
+<code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">project_version_detail</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.project_version_detail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project version detail page</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.projects.views.private.project_versions">
+<code class="descclassname">readthedocs.projects.views.private.</code><code class="descname">project_versions</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.projects.views.private.project_versions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Project versions view</p>
+<p>Shows the available versions and lets the user choose which ones he would
+like to have built.</p>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="vcs_support.html" class="btn btn-neutral float-right" title="readthedocs.vcs_support" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="core.html" class="btn btn-neutral" title="readthedocs.core" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010, Eric Holscher, Charlie Leifer, Bobby Grace.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

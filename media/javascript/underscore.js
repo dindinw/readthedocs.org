@@ -1,1 +1,0 @@
-../static/vendor/underscore-standalone.js

@@ -1,0 +1,352 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>User-defined Redirects &mdash; Read The Docs 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Read The Docs 1.0 documentation" href="index.html"/>
+        <link rel="next" title="Automatic Redirects" href="automatic-redirects.html"/>
+        <link rel="prev" title="Privacy Levels" href="privacy.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Read The Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="builds.html">Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Read the Docs features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="yaml-config.html">Read the Docs YAML Config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Read the Docs Public API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embed.html">Embed API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About Read the Docs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contributing to Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Read the Docs Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ethical-advertising.html">Ethical Advertising</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sponsors.html">Sponsors of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="open-source-philosophy.html">Read the Docs Open Source Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="story.html">The Story of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="talks.html">Talks about Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dmca/index.html">DMCA Takedown Policy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="webhooks.html">Webhooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternate_domains.html">Alternate Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="localization.html">Localization of Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vcs.html">VCS Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conda.html">Conda Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="single_version.html">Single Version Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Levels</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">User-defined Redirects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prefix-redirects">Prefix Redirects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#page-redirects">Page Redirects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exact-redirects">Exact Redirects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sphinx-redirects">Sphinx Redirects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#implementation">Implementation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="automatic-redirects.html">Automatic Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features/embed.html">Content Embedding</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tests.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs.html">Building and Contributing to Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/standards.html">Development Standards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/buildenvironments.html">Build Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="symlinks.html">How we use symlinks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Interesting Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issue-labels.html">Overview of issue labels</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Business Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="business/index.html">Read the Docs Business Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Custom Install Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="custom_installs/index.html">Info about custom installs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Designer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Designing Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="theme.html">Read the Docs Theme</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Read The Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>User-defined Redirects</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/user-defined-redirects.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="user-defined-redirects">
+<h1>User-defined Redirects<a class="headerlink" href="#user-defined-redirects" title="Permalink to this headline">¶</a></h1>
+<p>You can set up redirects for a project on the project&#8217;s Admin page.</p>
+<div class="section" id="prefix-redirects">
+<h2>Prefix Redirects<a class="headerlink" href="#prefix-redirects" title="Permalink to this headline">¶</a></h2>
+<p>The most useful and requested feature of redirects was when migrating to Read the Docs from an old host.
+You would have your docs served at a previous URL,
+but that URL would break once you moved them.
+Read the Docs includes a language and version slug in your documentation,
+but not all documentation is hosted this way.</p>
+<p>Say that you previously had your docs hosted at <code class="docutils literal"><span class="pre">http://docs.example.com/dev/</span></code>,
+you move <code class="docutils literal"><span class="pre">docs.example.com</span></code> to point at Read the Docs.
+So users will have a bookmark saved to a page at <code class="docutils literal"><span class="pre">http://docs.example.com/dev/install.html</span></code>.</p>
+<p>You can now set a <em>Prefix Redirect</em> that will redirect all 404&#8217;s with a prefix to a new place.
+The example configuration would be:</p>
+<div class="highlight-python"><div class="highlight"><pre>Type: Prefix Redirect
+From URL: /dev/
+</pre></div>
+</div>
+<p>Your users query would now redirect in the following manner:</p>
+<div class="highlight-python"><div class="highlight"><pre>docs.example.com/dev/install.html -&gt;
+docs.example.com/en/latest/install.html
+</pre></div>
+</div>
+<p>Where <code class="docutils literal"><span class="pre">en</span></code> and <code class="docutils literal"><span class="pre">latest</span></code> are the default language and version values for your project.</p>
+</div>
+<div class="section" id="page-redirects">
+<h2>Page Redirects<a class="headerlink" href="#page-redirects" title="Permalink to this headline">¶</a></h2>
+<p>A more specific case is when you move a page around in your docs.
+The old page will start 404&#8217;ing,
+and your users will be confused.
+<em>Page Redirects</em> let you redirect a specific page.</p>
+<p>Say you move the <code class="docutils literal"><span class="pre">example.html</span></code> page into a subdirectory of examples: <code class="docutils literal"><span class="pre">examples/intro.html</span></code>.
+You would set the following configuration:</p>
+<div class="highlight-python"><div class="highlight"><pre>Type: Page Redirect
+From URL: /example.html
+To URL: /examples/intro.html
+</pre></div>
+</div>
+<p>Note that the <code class="docutils literal"><span class="pre">/</span></code> at the start doesn&#8217;t count the <code class="docutils literal"><span class="pre">/en/latest</span></code>,
+but just the user-controlled section of the URL.</p>
+</div>
+<div class="section" id="exact-redirects">
+<h2>Exact Redirects<a class="headerlink" href="#exact-redirects" title="Permalink to this headline">¶</a></h2>
+<p>If you&#8217;re redirecting from an old host AND you aren&#8217;t maintaining old paths for your
+documents, a Prefix Redirect won&#8217;t suffice and you&#8217;ll need to create <em>Exact Redirects</em>
+to redirect from a specific URL, to a specific page.</p>
+<p>Say you&#8217;re moving <code class="docutils literal"><span class="pre">docs.example.com</span></code> to Read the Docs and want to redirect traffic
+from an old page at <code class="docutils literal"><span class="pre">http://docs.example.com/dev/install.html</span></code> to a new URL
+of <code class="docutils literal"><span class="pre">http://docs.example.com/en/latest/installing-your-site.html</span></code>.</p>
+<p>The example configuration would be:</p>
+<div class="highlight-python"><div class="highlight"><pre>Type: Exact Redirect
+From URL: /dev/install.html
+To URL:   /en/latest/installing-your-site.html
+</pre></div>
+</div>
+<p>Your users query would now redirect in the following manner:</p>
+<div class="highlight-python"><div class="highlight"><pre>docs.example.com/dev/install.html -&gt;
+docs.example.com/en/latest/installing-your-site.html
+</pre></div>
+</div>
+<p>Note that you should insert the desired language for &#8220;en&#8221; and version for &#8220;latest&#8221; to
+achieve the desired redirect.</p>
+</div>
+<div class="section" id="sphinx-redirects">
+<h2>Sphinx Redirects<a class="headerlink" href="#sphinx-redirects" title="Permalink to this headline">¶</a></h2>
+<p>We also support redirects for changing the type of documentation Sphinx is building.
+If you switch between <em>HTMLDir</em> and <em>HTML</em>, your URL&#8217;s will change.
+A page at <code class="docutils literal"><span class="pre">/en/latest/install.html</span></code> will be served at <code class="docutils literal"><span class="pre">/en/latest/install/</span></code>,
+or vice versa.
+The built in redirects for this will handle redirecting users appropriately.</p>
+</div>
+<div class="section" id="implementation">
+<h2>Implementation<a class="headerlink" href="#implementation" title="Permalink to this headline">¶</a></h2>
+<p>Since we serve documentation in a highly available way,
+we do not run any logic when we&#8217;re serving documentation.
+This means that redirects will only happen in the case of a <em>404 File Not Found</em>.</p>
+<p>In the future we might implement redirect logic in Javascript,
+but this first version is only implemented in the 404 handlers.</p>
+<p>Feature Requests</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="automatic-redirects.html" class="btn btn-neutral float-right" title="Automatic Redirects" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="privacy.html" class="btn btn-neutral" title="Privacy Levels" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010, Eric Holscher, Charlie Leifer, Bobby Grace.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

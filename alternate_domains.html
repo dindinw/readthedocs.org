@@ -1,0 +1,339 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Alternate Domains &mdash; Read The Docs 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Read The Docs 1.0 documentation" href="index.html"/>
+        <link rel="next" title="Localization of Documentation" href="localization.html"/>
+        <link rel="prev" title="Badges" href="badges.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Read The Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="builds.html">Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Read the Docs features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="yaml-config.html">Read the Docs YAML Config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Read the Docs Public API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embed.html">Embed API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About Read the Docs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contributing to Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Read the Docs Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ethical-advertising.html">Ethical Advertising</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sponsors.html">Sponsors of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="open-source-philosophy.html">Read the Docs Open Source Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="story.html">The Story of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="talks.html">Talks about Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dmca/index.html">DMCA Takedown Policy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="webhooks.html">Webhooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Alternate Domains</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#subdomain-support">Subdomain Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cname-support">CNAME Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cname-ssl">CNAME SSL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rtfd-org">rtfd.org</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="localization.html">Localization of Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vcs.html">VCS Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conda.html">Conda Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="canonical.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="single_version.html">Single Version Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user-defined-redirects.html">User-defined Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic-redirects.html">Automatic Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features/embed.html">Content Embedding</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tests.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs.html">Building and Contributing to Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/standards.html">Development Standards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/buildenvironments.html">Build Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="symlinks.html">How we use symlinks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Interesting Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issue-labels.html">Overview of issue labels</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Business Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="business/index.html">Read the Docs Business Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Custom Install Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="custom_installs/index.html">Info about custom installs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Designer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Designing Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="theme.html">Read the Docs Theme</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Read The Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Alternate Domains</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/alternate_domains.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="alternate-domains">
+<h1>Alternate Domains<a class="headerlink" href="#alternate-domains" title="Permalink to this headline">¶</a></h1>
+<p>Read the Docs supports a number of custom domains for your convenience. Shorter urls make everyone happy, and we like making people happy!</p>
+<div class="section" id="subdomain-support">
+<h2>Subdomain Support<a class="headerlink" href="#subdomain-support" title="Permalink to this headline">¶</a></h2>
+<p>Every project has a subdomain that is available to serve its documentation. If you go to &lt;slug&gt;.readthedocs.io, it should show you the latest version of documentation. A good example is <a class="reference external" href="http://pip.readthedocs.io">http://pip.readthedocs.io</a></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you have an old project that has an underscore (_) in the name, it will use a subdomain with a hyphen (-).
+<a class="reference external" href="http://tools.ietf.org/html/rfc1035">RFC 1035</a> has more information on valid subdomains.</p>
+</div>
+</div>
+<div class="section" id="cname-support">
+<h2>CNAME Support<a class="headerlink" href="#cname-support" title="Permalink to this headline">¶</a></h2>
+<p>If you have your own domain, you can still host with us.
+This requires two steps:</p>
+<ul class="simple">
+<li>Add a CNAME record in your DNS that point to our servers <code class="xref py py-obj docutils literal"><span class="pre">readthedocs.io</span></code></li>
+<li>Add a Domain object in the <strong>Project Admin &gt; Domains</strong> page for your project.</li>
+</ul>
+<p>Using pip as an example, <a class="reference external" href="http://www.pip-installer.org">http://www.pip-installer.org</a> resolves, but is hosted on our infrastructure.</p>
+<p>As an example, fabric&#8217;s dig record looks like this:</p>
+<div class="highlight-python"><div class="highlight"><pre>-&gt; dig docs.fabfile.org
+...
+;; ANSWER SECTION:
+docs.fabfile.org.   7200    IN  CNAME   readthedocs.io.
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">We used to map your projects documentation from the subdomain that you pointed your CNAME to.
+This wasn&#8217;t workable at scale,
+and now we require you to set the domain you want to resolve on your project.</p>
+</div>
+</div>
+<div class="section" id="cname-ssl">
+<h2>CNAME SSL<a class="headerlink" href="#cname-ssl" title="Permalink to this headline">¶</a></h2>
+<p>We don&#8217;t support SSL for CNAMEs on our side,
+but you can enable support if you have your own server.
+SSL requires having a secret key,
+and if we hosted the key for you,
+it would no longer be secret.</p>
+<p>To enable SSL:</p>
+<ul class="simple">
+<li>Have a server listening on 443 that you control</li>
+<li>Add a domain that you wish to point at Read the Docs</li>
+<li>Enable proxying to us, with a custom <code class="docutils literal"><span class="pre">X-RTD-SLUG</span></code> header</li>
+</ul>
+<p>An example nginx configuration for pip would look like:</p>
+<div class="highlight-nginx"><div class="highlight"><pre> <span class="k">server</span> <span class="p">{</span>
+     <span class="kn">server_name</span> <span class="s">docs.pip-installer.org</span><span class="p">;</span>
+     <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+         <span class="kn">proxy_pass</span> <span class="s">https://pip.readthedocs.io:443</span><span class="p">;</span>
+         <span class="kn">proxy_set_header</span> <span class="s">Host</span> <span class="nv">$http_host</span><span class="p">;</span>
+         <span class="kn">proxy_set_header</span> <span class="s">X-Forwarded-Proto</span> <span class="s">https</span><span class="p">;</span>
+         <span class="kn">proxy_set_header</span> <span class="s">X-Real-IP</span> <span class="nv">$remote_addr</span><span class="p">;</span>
+         <span class="kn">proxy_set_header</span> <span class="s">X-Scheme</span> <span class="nv">$scheme</span><span class="p">;</span>
+<span class="hll">         <span class="kn">proxy_set_header</span> <span class="s">X-RTD-SLUG</span> <span class="s">pip</span><span class="p">;</span>
+</span>         <span class="kn">proxy_connect_timeout</span> <span class="s">10s</span><span class="p">;</span>
+         <span class="kn">proxy_read_timeout</span> <span class="s">20s</span><span class="p">;</span>
+     <span class="p">}</span>
+ <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="rtfd-org">
+<h2>rtfd.org<a class="headerlink" href="#rtfd-org" title="Permalink to this headline">¶</a></h2>
+<p>You can also use <code class="xref py py-obj docutils literal"><span class="pre">rtfd.io</span></code> and <code class="xref py py-obj docutils literal"><span class="pre">rtfd.org</span></code> for short URLs for Read the Docs. For example, <a class="reference external" href="http://pip.rtfd.io">http://pip.rtfd.io</a> redirects to its documentation page. Any use of <code class="xref py py-obj docutils literal"><span class="pre">rtfd.io</span></code> or <code class="xref py py-obj docutils literal"><span class="pre">rtfd.org</span></code> will simply be redirected to <code class="xref py py-obj docutils literal"><span class="pre">readthedocs.io</span></code>.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="localization.html" class="btn btn-neutral float-right" title="Localization of Documentation" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="badges.html" class="btn btn-neutral" title="Badges" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010, Eric Holscher, Charlie Leifer, Bobby Grace.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

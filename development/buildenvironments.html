@@ -1,0 +1,327 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Build Environments &mdash; Read The Docs 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Read The Docs 1.0 documentation" href="../index.html"/>
+        <link rel="next" title="How we use symlinks" href="../symlinks.html"/>
+        <link rel="prev" title="Development Standards" href="standards.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Read The Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Read the Docs features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yaml-config.html">Read the Docs YAML Config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">Read the Docs Public API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Embed API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About Read the Docs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contribute.html">Contributing to Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../team.html">Read the Docs Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ethical-advertising.html">Ethical Advertising</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sponsors.html">Sponsors of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../open-source-philosophy.html">Read the Docs Open Source Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../story.html">The Story of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../talks.html">Talks about Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dmca/index.html">DMCA Takedown Policy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../webhooks.html">Webhooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../alternate_domains.html">Alternate Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization of Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vcs.html">VCS Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conda.html">Conda Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../single_version.html">Single Version Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../privacy.html">Privacy Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">User-defined Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automatic-redirects.html">Automatic Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../features/embed.html">Content Embedding</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tests.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs.html">Building and Contributing to Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="standards.html">Development Standards</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Build Environments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setup">Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../symlinks.html">How we use symlinks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings.html">Interesting Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issue-labels.html">Overview of issue labels</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Business Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../business/index.html">Read the Docs Business Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Custom Install Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../custom_installs/index.html">Info about custom installs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Designer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../design.html">Designing Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../theme.html">Read the Docs Theme</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Read The Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Build Environments</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/development/buildenvironments.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="build-environments">
+<h1>Build Environments<a class="headerlink" href="#build-environments" title="Permalink to this headline">¶</a></h1>
+<p>Read the Docs uses container virtualization to encapsulate documentation build
+processes. Each build spins up a new virtual machine using our base image,
+which is an image with the minimum necessary components required to build
+documentation. Virtual machines are limiting in CPU time and memory, which aims
+to reduce excessive usage of build resources.</p>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<p>Build environments use <a class="reference external" href="http://docker.com">Docker</a> to handle container virtualization. To perform
+any development on the Docker build system, you will need to set up <a class="reference external" href="http://docker.com">Docker</a> on
+your host system. Setup of Docker will vary by system, and so is out of the
+scope of this documentation.</p>
+<p>Once you have Docker set up, you will need to create the base image used for
+container creation. The <code class="docutils literal"><span class="pre">base</span></code> image is found in our <a class="reference external" href="https://github.com/rtfd/readthedocs-docker-images">container images repo</a>.
+It is the basic container image supported by our community site.</p>
+<p>To get started, create the image using the <code class="xref py py-obj docutils literal"><span class="pre">docker</span></code> command line tool. You can
+name the image whatever you like here, <code class="docutils literal"><span class="pre">rtfd-build</span></code> is the default name, but
+can be configured in your settings &#8211; see <a class="reference internal" href="#configuration">Configuration</a>:</p>
+<div class="highlight-python"><div class="highlight"><pre>docker build -t rtfd-build base/
+</pre></div>
+</div>
+<p>When this process has completed, you should have a working image that Read the
+Docs can use to start containers.</p>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>There are several settings used to configure usage of virtual machines:</p>
+<dl class="docutils">
+<dt>DOCKER_ENABLED</dt>
+<dd>True/False value used to enable the Docker build environment. Default:
+False</dd>
+<dt>DOCKER_LIMITS</dt>
+<dd><p class="first">A dictionary of limits to virtual machines. These limits include:</p>
+<blockquote class="last">
+<div><dl class="docutils">
+<dt>time</dt>
+<dd>An integer representing the total allowed time limit (in
+seconds) of build processes. This time limit affects the parent
+process to the virtual machine and will force a virtual machine
+to die if a build is still running after the allotted time
+expires.</dd>
+<dt>memory</dt>
+<dd>The maximum memory allocated to the virtual machine. If this
+limit is hit, build processes will be automatically killed.
+Examples: &#8216;200m&#8217; for 200MB of total memory, or &#8216;2g&#8217; for 2GB of
+total memory.</dd>
+</dl>
+</div></blockquote>
+</dd>
+<dt>DOCKER_IMAGE</dt>
+<dd>Tag of a Docker image to use as a base image.</dd>
+<dt>DOCKER_SOCKET</dt>
+<dd>URI of the socket to connect to the Docker daemon. Examples include:
+<code class="docutils literal"><span class="pre">unix:///var/run/docker.sock</span></code> and <code class="docutils literal"><span class="pre">tcp://127.0.0.1:2375</span></code></dd>
+<dt>DOCKER_VERSION</dt>
+<dd>Version of the API to use for the Docker API client.</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../symlinks.html" class="btn btn-neutral float-right" title="How we use symlinks" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="standards.html" class="btn btn-neutral" title="Development Standards" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010, Eric Holscher, Charlie Leifer, Bobby Grace.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
